@@ -1,91 +1,176 @@
-Vaultix 🔐
+<div align="center">
 
-A privacy-focused, offline-first password manager built with Flutter.
+# 🔐 Vaultix
 
-Vaultix is designed around a simple principle: your passwords should belong to you—not to a company, a cloud service, or a third-party server.
+### Privacy-focused • Offline-first • Secure Password Manager
 
-Instead of relying on online accounts or centralized infrastructure, Vaultix keeps your encrypted vault on your device. If you choose to create a backup, the encrypted vault is stored in your own Google Drive, and only the encrypted data is uploaded. Your passwords are never stored in plaintext outside your device.
+A modern password manager built with Flutter that keeps your sensitive data encrypted on your device. No mandatory cloud accounts. No central servers. Your data stays under your control.
 
----
+<p>
 
-💡 Why I Built Vaultix
+![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-GPLv3-blue?style=for-the-badge)
+![Security](https://img.shields.io/badge/Encryption-AES--256--GCM-red?style=for-the-badge)
 
-Most password managers rely on cloud synchronization and user accounts. While many are secure, I wanted to build an alternative that gives users complete control over where their data lives.
+</p>
 
-Vaultix is my attempt at creating a password manager that works entirely offline while still offering optional encrypted backups for convenience.
-
-The goal is simple:
-
-- Privacy by default
-- Offline-first architecture
-- User-controlled backups
-- Strong client-side encryption
-- No mandatory online account
+</div>
 
 ---
 
-✨ Features
+# 💡 Why Vaultix?
 
-- 🔒 Offline-first — Fully functional without an internet connection.
-- ☁️ Optional Google Drive Backup — Upload an encrypted backup to your own Drive account.
-- 👆 Biometric Authentication — Unlock using Fingerprint or Face ID where supported.
-- 🛡️ Screenshot Protection — Uses Android's "FLAG_SECURE" to help prevent screenshots and screen recording while the vault is open.
-- 🔑 Password Generator — Generate strong passwords with configurable length and character sets.
-- 📂 Vault Organization — Store logins, secure notes, payment cards, and identities.
-- ⭐ Favorites & Recent Items
-- 📊 Security Score based on password strength.
-- ⚠️ Weak and Reused Password Detection
-- 🎨 Modern Material 3 Interface
-- 🌙 Dark & Light Themes
-- 📳 Native Haptic Feedback
-- 🔄 Automatic Encrypted Backup (optional)
+Most password managers require cloud accounts or store encrypted data on company servers.
 
----
+Vaultix takes a different approach.
 
-🔐 Security Design
+It is designed around one simple principle:
 
-Vaultix is designed so that encryption happens before any data leaves the device.
+> **Your passwords should remain under your control.**
 
-The security workflow is straightforward:
+Vaultix works completely offline. Your passwords are encrypted on your device before they are stored.
 
-1. Your Master Password is processed using PBKDF2 with a randomly generated salt to derive a strong encryption key.
-2. Sensitive cryptographic material is protected using the platform security features available on Android and iOS where applicable.
-3. Vault data is encrypted using AES-256-GCM, which provides both confidentiality and integrity.
-4. If cloud backup is enabled, only the encrypted vault is uploaded to your personal Google Drive account.
+If you choose to create a backup, only the encrypted vault is uploaded to **your own Google Drive**.
 
-At no point does Vaultix intentionally upload your passwords in plaintext.
+Your passwords are never intentionally uploaded as plaintext.
 
 ---
 
-📱 Screenshots
+# ✨ Features
 
-Login| Dashboard| Password Generator
-login.png| home.png| generator.png
-
-Settings| Appearance
-settings_1.png| settings_2.png
+- 🔒 Offline-first architecture
+- 🔑 Master Password protection
+- 👆 Fingerprint & Face Unlock
+- 🔐 AES-256-GCM encryption
+- ☁️ Optional encrypted Google Drive backup
+- 📳 Native haptic feedback
+- 🛡 Screenshot & screen recording protection
+- 🎲 Secure password generator
+- 📊 Password Security Score
+- ⚠ Weak password detection
+- 🔁 Password reuse detection
+- 📁 Login, Card, Identity & Secure Note support
+- ⭐ Favorites
+- 🕒 Recently Added section
+- 🌙 Dark & Light themes
+- 🎨 Material 3 interface
+- ⚡ Smooth animations
 
 ---
 
-📜 License
+# 🔐 Security
 
-Vaultix is released under the GNU General Public License v3.0 (GPLv3).
+Vaultix encrypts your data before it is written to storage.
 
-I chose GPLv3 because I believe security software benefits from transparency. Anyone can inspect, learn from, and contribute to the project.
+## Encryption Flow
 
-You're welcome to:
+```
+Master Password
+        │
+        ▼
+PBKDF2 + Random Salt
+        │
+        ▼
+256-bit Encryption Key
+        │
+        ▼
+AES-256-GCM Encryption
+        │
+        ▼
+Encrypted Local Vault
+        │
+        ▼
+(Optional)
+Encrypted Google Drive Backup
+```
+
+### Security Details
+
+- PBKDF2 key derivation
+- Secure random salt
+- AES-256-GCM authenticated encryption
+- Optional encrypted cloud backup
+- Local-first architecture
+
+---
+
+# 📱 Screenshots
+
+| Login | Dashboard | Password Generator |
+|:------:|:---------:|:------------------:|
+| <img src="assets/screenshots/login.png" width="250"/> | <img src="assets/screenshots/home.png" width="250"/> | <img src="assets/screenshots/generator.png" width="250"/> |
+
+| Settings | Appearance |
+|:---------:|:----------:|
+| <img src="assets/screenshots/settings_1.png" width="250"/> | <img src="assets/screenshots/settings_2.png" width="250"/> |
+
+---
+
+# 🚀 Tech Stack
+
+- Flutter
+- Dart
+- Riverpod
+- Go Router
+- Hive
+- Flutter Secure Storage
+- Google Sign-In
+- Google Drive API
+- Local Authentication
+- Material 3
+
+---
+
+# 📂 Project Structure
+
+```
+lib/
+ ├── core/
+ ├── features/
+ │     ├── home/
+ │     ├── vault/
+ │     ├── settings/
+ │     ├── auth/
+ │     └── security/
+ ├── shared/
+ └── main.dart
+```
+
+---
+
+# 📖 License
+
+Vaultix is released under the **GNU General Public License v3.0 (GPLv3).**
+
+This means you are free to:
 
 - Use the project
-- Study the source code
+- Learn from it
 - Modify it
 - Share it
 
-If you distribute a modified version, GPLv3 requires that the source code for those modifications also be released under the same license.
+If you distribute a modified version, GPLv3 requires that your modifications are also released under the same license.
 
-See the "LICENSE" file for the complete license text.
+See the **LICENSE** file for more information.
 
 ---
 
-Built with ❤️ using Flutter
+# ⭐ Support
 
-Designed and developed by Kiran.
+If you find this project useful,
+
+please consider giving it a ⭐ on GitHub.
+
+It helps the project reach more developers.
+
+---
+
+<div align="center">
+
+## Built with ❤️ by Kiran
+
+**Privacy First • Security Always**
+
+</div>
