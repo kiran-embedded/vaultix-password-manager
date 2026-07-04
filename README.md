@@ -57,18 +57,18 @@ I didn't cut corners on security. Here's exactly what happens under the hood:
 
 ---
 
-## 🛑 Legal Notice
+## 📖 Open Source & License
 
-### **Copyright (c) 2026 Kiran. All Rights Reserved.**
+### **GNU General Public License v3.0 (GPLv3)**
 
-This repository is strictly a portfolio piece. I made it public so people can read the code and see how I build secure Flutter applications. 
+I decided to open-source Vaultix because transparency is everything in cybersecurity. Anyone can read, audit, and use this code. 
 
-**You do NOT have permission to use, copy, modify, or distribute this code.** 
-- You cannot clone this and publish your own version on the Play Store.
-- You cannot rip out my custom UI widgets and use them in a commercial app.
-- You cannot fork this to bypass the copyright.
+However, since I put a lot of work into this as a solo developer, this project is licensed under **GPLv3**. This is an open-source license with a strict protective catch:
+- You are totally free to fork this, build it, and use it for yourself.
+- **BUT**, if you modify this code and distribute your own version (like putting it on the Play Store), you are **legally required to open-source your entire project under the exact same GPLv3 license**. 
+- You cannot take my code, make it closed-source, and sell it. You have to share your work just like I shared mine.
 
-Any unauthorized use will result in immediate DMCA takedown notices and legal action. Check the `LICENSE` file for full details.
+This protects the project from being stolen by greedy corporations while keeping it 100% free for the community. Check the `LICENSE` file for the exact legal terms.
 
 ---
 
