@@ -57,6 +57,16 @@ I didn't cut corners on security. Here's exactly what happens under the hood:
 
 ---
 
+## 📸 App Interface
+
+| Master Login | Vault Dashboard | Password Generator |
+| :---: | :---: | :---: |
+| <img src="assets/screenshots/login.png" width="250"> | <img src="assets/screenshots/home.png" width="250"> | <img src="assets/screenshots/generator.png" width="250"> |
+| **Settings & Sync** | **Appearance & Support** | |
+| <img src="assets/screenshots/settings_1.png" width="250"> | <img src="assets/screenshots/settings_2.png" width="250"> | |
+
+---
+
 ## 📖 Open Source & License
 
 ### **GNU General Public License v3.0 (GPLv3)**
