@@ -1,0 +1,545 @@
+--------- beginning of main
+07-04 08:44:28.500  2594  2947 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.500  3002  3002 I HoneySpace.SystemUiRepository: systemUiFlags: awake
+--------- beginning of system
+07-04 08:44:28.494  1505  1532 D WindowManager: updateSystemBarAttributes, bhv=2, apr=0, statusBarAprRegions=[AppearanceRegion{ bounds=[0,0][1080,2340]}], requestedVisibilities=503
+07-04 08:44:28.501  1505  1532 W PhoneWindowManager: lockNow pending, ignore updating lockscreen timeout
+07-04 08:44:28.502  1505  1532 I SurfaceControl: apply, lowDebugName=Focus request: recents_animation_input_consumer, caller=android.view.SurfaceControl$Transaction.apply:3569 android.view.SurfaceControl$Transaction.apply:3519 com.android.server.wm.WindowAnimator.animate:468 com.android.server.wm.WindowAnimator$$ExternalSyntheticLambda1.doFrame:14 android.view.Choreographer$CallbackRecord.run:1959 android.view.Choreographer$CallbackRecord.run:1970 
+07-04 08:44:28.505  1000  1000 I SurfaceFlinger: [LayerHierarchy{RequestedLayerState{55d7c47 NavigationBar0#76 parentId=539708} 1 children}] reparent to LayerHierarchy{RequestedLayerState{Surface(name=55d7c47 NavigationBar0#76)/@0xfb390a - animation-leash of insets_animation#539708 parentId=75} 1 children}
+07-04 08:44:28.505  1000  1000 I SurfaceFlinger: [LayerHierarchy{RequestedLayerState{dfa38a5 StatusBar#83 parentId=539707} 1 children}] reparent to LayerHierarchy{RequestedLayerState{Surface(name=dfa38a5 StatusBar#83)/@0xc06225f - animation-leash of insets_animation#539707 parentId=82} 1 children}
+07-04 08:44:28.505  1000  1000 I SurfaceFlinger: [LayerHierarchy{RequestedLayerState{Input Consumer recents_animation_input_consumer#111 relativeParentId=539428 z=2} no children}] RelativeParent to LayerHierarchy{RequestedLayerState{Task=4599#539428 parentId=539706} 2 children}
+07-04 08:44:28.505  1000  1000 I SurfaceFlinger: [LayerHierarchy{RequestedLayerState{Surface(name=55d7c47 NavigationBar0#76)/@0xfb390a - animation-leash of insets_animation#539699} no children}] reparent to OffscreenRoot
+07-04 08:44:28.505  1000  1000 I SurfaceFlinger: [LayerHierarchy{RequestedLayerState{Surface(name=55d7c47 NavigationBar0#76)/@0xfb390a - animation-leash of insets_animation#539699} no children}] RelativeParent to null
+07-04 08:44:28.505  1000  1000 I SurfaceFlinger: [LayerHierarchy{RequestedLayerState{Surface(name=dfa38a5 StatusBar#83)/@0xc06225f - animation-leash of insets_animation#539698} no children}] reparent to OffscreenRoot
+07-04 08:44:28.505  1000  1000 I SurfaceFlinger: [LayerHierarchy{RequestedLayerState{Surface(name=dfa38a5 StatusBar#83)/@0xc06225f - animation-leash of insets_animation#539698} no children}] RelativeParent to null
+07-04 08:44:28.506  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.507  1505  1771 D MdnieScenarioControlService:  packageName : com.sec.android.app.launcher    className : com.sec.android.app.launcher.Launcher
+07-04 08:44:28.507  3002  3052 I HoneySpace.TaskbarEventTracker: invokeEvent() called with: event = SystemUiStateChanged(stateFlags=268435456, displayId=0)
+07-04 08:44:28.507  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(202.99191, 185.3429, 1129.008, 2159.7344)
+07-04 08:44:28.507  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(247.23898, 280.5838, 1084.761, 2026.0449)
+07-04 08:44:28.507  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(242.01083, 280.5838, 1079.5328, 2026.0449)
+07-04 08:44:28.507  1505  1771 V MdnieScenarioControlService: setUIMode from UI function(3)
+07-04 08:44:28.508  1000  1347 D SurfaceFlinger: [input] setFocusedWindow: recents_animation_input_consumer
+07-04 08:44:28.508  1000  1347 D SurfaceFlinger: updateWinowInfo=1, setFocusedWindow timestamp=1057883548204204, windowName=recents_animation_input_consumer
+07-04 08:44:28.508  1505  4716 D InputDispatcher: Once focus requested (0): recents_animation_input_consumer
+07-04 08:44:28.508  1505  4716 D InputDispatcher: Focus left window (0): 42015a4 com.kiranembedded.vaultix/com.kiranembedded.vaultix.MainActivity
+07-04 08:44:28.508  1505  4716 D InputDispatcher: Focus entered window (0): recents_animation_input_consumer
+07-04 08:44:28.508  1000  2633 I SurfaceFlinger: onHandleDestroyed: layerId=539698, name=Surface(name=dfa38a5 StatusBar#83)/@0xc06225f - animation-leash of insets_animation#539698
+07-04 08:44:28.509  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3ca58800 mBlastBufferQueue=0xb400006dd4c42800 fn= 5 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.509  1000  2633 I SurfaceFlinger: id=539698 Removed Surface(name=dfa38a5 StatusBar#83)/@0xc06225f - animation-leash of insets_animation#539698 (169)
+07-04 08:44:28.509  1000  2633 I SurfaceFlinger: onHandleDestroyed: layerId=539699, name=Surface(name=55d7c47 NavigationBar0#76)/@0xfb390a - animation-leash of insets_animation#539699
+07-04 08:44:28.509  1000  2633 I SurfaceFlinger: id=539699 Removed Surface(name=55d7c47 NavigationBar0#76)/@0xfb390a - animation-leash of insets_animation#539699 (169)
+07-04 08:44:28.510 29750 29750 I ImeFocusController: onPreWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+07-04 08:44:28.510 29750 29750 I ImeFocusController: onPostWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+07-04 08:44:28.514  3002  3002 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=statusBars, host=com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity
+07-04 08:44:28.515  3002  3002 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity
+07-04 08:44:28.515  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(242.01083, 325.42212, 1079.5328, 2070.8833)
+07-04 08:44:28.515  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(274.26932, 394.17694, 1047.2744, 1974.3723)
+07-04 08:44:28.515  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(268.92923, 394.17694, 1041.9343, 1974.3723)
+07-04 08:44:28.516  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3cb27000 mBlastBufferQueue=0xb400006dd4c42800 fn= 6 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.516  1000  1000 I SurfaceFlinger: destroyed Surface(name=55d7c47 NavigationBar0#76)/@0xfb390a - animation-leash of insets_animation#539699
+07-04 08:44:28.516  1000  1000 I SurfaceFlinger: destroyed Surface(name=dfa38a5 StatusBar#83)/@0xc06225f - animation-leash of insets_animation#539698
+07-04 08:44:28.516  1000  1000 I SurfaceFlinger: [LayerHierarchy{RequestedLayerState{Input Consumer recents_animation_input_consumer#111 relativeParentId=539428 z=2} no children}] RelativeParent to LayerHierarchy{RequestedLayerState{Task=4599#539428 parentId=539706} 2 children}
+07-04 08:44:28.517  1000  1000 I SurfaceFlinger: id=539699 Destroyed Surface(name=55d7c47 NavigationBar0#76)/@0xfb390a - animation-leash of insets_animation#539699
+07-04 08:44:28.517  1000  1000 I SurfaceFlinger: id=539698 Destroyed Surface(name=dfa38a5 StatusBar#83)/@0xc06225f - animation-leash of insets_animation#539698
+07-04 08:44:28.517  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.520   951   961 I mtkpower@impl: [setMode] type:6, enabled:1
+07-04 08:44:28.520 17897 18021 I Kumiho-Kumiho: getPackageName: org.kustom.widget
+07-04 08:44:28.520   951   961 E mtkpower@impl: [setMode] unknown type
+07-04 08:44:28.522  1000  1000 I BufferQueueProducer: [FramebufferSurface](this:0xb400007cb12386f8,id:-1,api:1,p:1000,c:1000) queueBuffer: fps=0.41 dur=2461.64 max=2461.64 min=2461.64
+07-04 08:44:28.524  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(268.92923, 453.66852, 1041.9343, 2033.864)
+07-04 08:44:28.524  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(309.24808, 538.8178, 1001.6155, 1914.3401)
+07-04 08:44:28.524  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(301.72568, 538.8178, 994.093, 1914.3401)
+07-04 08:44:28.525  1000  1000 D SurfaceFlinger: Display 4627039422300187648 HWC layers:
+07-04 08:44:28.525  1000  1000 D SurfaceFlinger:        DEVICE |           45363444580518 | 00000100 | RGBA_8888    |  148.0  321.0  932.0 2019.0 |    0    0 1080 2340 | Wallpaper BBQ wrapper 5_system#320879 (3268)
+07-04 08:44:28.525  1000  1000 D SurfaceFlinger:        DEVICE |           12893491949762 | 00002100 | RGBA_8888    |    0.0    0.0 1080.0 2340.0 |    0    0 1080 2340 | com.sec.android.app.launcher/com.sec[...]vities.LauncherActivity$_3002#539702 (4)
+07-04 08:44:28.525  1000  1000 D SurfaceFlinger:        DEVICE |           12893491949586 | 00002100 | RGBA_8888    |    0.0    0.0    1.0    1.0 |  539 2339  540 2340 | RecentsTransitionOverlay$_3002#114 (212699)
+07-04 08:44:28.525  1000  1000 D SurfaceFlinger:        CLIENT |                        0 | 00000002 | N/A          |    0.0    0.0    0.0    0.0 |    0    0 1080 2340 | Background for e54bf28 SurfaceView[c[...]edded.vaultix.MainActivity]@0#539685 (0)
+07-04 08:44:28.525  1000  1000 D SurfaceFlinger:        CLIENT |          127775277056070 | 00000102 | RGBA_8888    |    0.0    0.0 1080.0 2340.0 |    0    0 1080 2340 | e54bf28 SurfaceView[com.kiranembedde[...]aultix.MainActivity]@0(BLAST)#539684 (428)
+07-04 08:44:28.525  1000  1000 D SurfaceFlinger:        CLIENT |          127775277056078 
+07-04 08:44:28.525  1000  1000 D SurfaceFlinger: | 00002100 | RGBA_8888    |    0.0    0.0 1080.0 2340.0 |    0    0 1080 2340 | com.kiranembedded.vaultix/com.kirane[...]d.vaultix.MainActivity$_29750#539681 (2)
+07-04 08:44:28.525  1000  1000 D SurfaceFlinger:        DEVICE |           11141145514064 | 00002100 | RGBA_8888    |    0.0    0.0 1080.0  100.0 |    0    0 1080  100 | StatusBar$_2594#90 (496752)
+07-04 08:44:28.525  1000  1000 D SurfaceFlinger:        DEVICE |           11141145514062 | 00002100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2205 1080 2340 | NavigationBar0$_2594#86 (79856)
+07-04 08:44:28.525  1000  1000 D SurfaceFlinger: 
+07-04 08:44:28.526  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3cb27200 mBlastBufferQueue=0xb400006dd4c42800 fn= 7 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.528  1000  1000 I BufferQueueProducer: [StatusBar$_2594#90](this:0xb400007caf92ea98,id:-1,api:0,p:-1,c:1000) queueBuffer: fps=0.25 dur=3981.16 max=3981.16 min=3981.16
+07-04 08:44:28.528 17897 18021 I Kumiho-Kumiho: getPackageName: org.kustom.widget
+07-04 08:44:28.528  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.529  2594  2952 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.529  2594  2946 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.529  2594  2938 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.529 17897 18021 I Kumiho-Kumiho: getPackageName: org.kustom.widget
+07-04 08:44:28.533  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(301.72568, 597.16705, 994.093, 1972.6892)
+07-04 08:44:28.533  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(338.81866, 674.6599, 957.00006, 1863.9126)
+07-04 08:44:28.533  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(331.1709, 674.6599, 949.3523, 1863.9126)
+07-04 08:44:28.537  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3cb27800 mBlastBufferQueue=0xb400006dd4c42800 fn= 8 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.540  2594 30852 I AODCommonSettingsUtils: addLogText 
+07-04 08:44:28.541  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.542  2594 30852 I AODAddLogTextTask: addLogText finished , for 2 ms
+07-04 08:44:28.544  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(331.1709, 759.5148, 949.3523, 1948.7676)
+07-04 08:44:28.544  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(381.08322, 861.84875, 899.43994, 1805.1215)
+07-04 08:44:28.544  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(369.66116, 861.84875, 888.01794, 1805.1215)
+07-04 08:44:28.547  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3cb27a00 mBlastBufferQueue=0xb400006dd4c42800 fn= 9 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.550  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.551  2594  2952 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.551  2594  2943 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.552  2594  2946 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.555  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(369.66116, 948.19836, 888.01794, 1891.4711)
+07-04 08:44:28.555  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(415.7111, 1041.46, 841.968, 1760.56)
+07-04 08:44:28.555  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(403.8295, 1041.46, 830.0864, 1760.56)
+07-04 08:44:28.556  2594  2594 I View    : setRequestedFrameRate frameRate=NaN, this=androidx.compose.ui.platform.AndroidComposeView{5b70567 VFED..... ........ 0,0-36,56 aid=8}, caller=android.view.ViewGroup.setRequestedFrameRate:10045 androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:1 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:140 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 
+07-04 08:44:28.556  2594  2594 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{bb94ab3 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:1 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:150 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.View.draw:26477 
+07-04 08:44:28.557  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3cb27c00 mBlastBufferQueue=0xb400006dd4c42800 fn= 10 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.561  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.566  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(403.8295, 1125.937, 830.0864, 1845.0374)
+07-04 08:44:28.566  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(444.2502, 1204.7776, 789.66565, 1734.3691)
+07-04 08:44:28.566  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(432.43124, 1204.7776, 777.8467, 1734.3691)
+07-04 08:44:28.567  2594  2940 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.567  2594  2940 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.567  2594  2940 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.570  2594  2594 I View    : setRequestedFrameRate frameRate=NaN, this=androidx.compose.ui.platform.AndroidComposeView{5b70567 VFED..... ........ 0,0-36,56 aid=8}, caller=android.view.ViewGroup.setRequestedFrameRate:10045 androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:1 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:140 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 
+07-04 08:44:28.570  2594  2594 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{bb94ab3 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:1 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:150 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.View.draw:26477 
+07-04 08:44:28.571  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3cb27e00 mBlastBufferQueue=0xb400006dd4c42800 fn= 11 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.573  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.577  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(432.43124, 1291.8569, 777.8467, 1821.4485)
+07-04 08:44:28.577  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(469.13785, 1360.564, 741.14014, 1725.0045)
+07-04 08:44:28.577  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(456.78165, 1360.564, 728.78394, 1725.0045)
+07-04 08:44:28.579  2594  2938 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.579  2594  2938 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.579  2594  2938 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.581  2594  2594 I View    : setRequestedFrameRate frameRate=NaN, this=androidx.compose.ui.platform.AndroidComposeView{5b70567 VFED..... ........ 0,0-36,56 aid=8}, caller=android.view.ViewGroup.setRequestedFrameRate:10045 androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:1 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:140 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 
+07-04 08:44:28.581  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c252400 mBlastBufferQueue=0xb400006dd4c42800 fn= 12 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.581  2594  2594 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{bb94ab3 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:1 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:150 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.View.draw:26477 
+07-04 08:44:28.584  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.584  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.585  3002  3000 I HoneySpace.Player: Transaction committed! targetRect-RectF(320.6054, 700.19324, 940.5053, 1901.7605)
+07-04 08:44:28.586  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.590  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(456.78165, 1440.1509, 728.78394, 1804.5914)
+07-04 08:44:28.590  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(485.62894, 1489.7708, 699.93665, 1734.9401)
+07-04 08:44:28.590  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(474.19138, 1489.7708, 688.499, 1734.9401)
+07-04 08:44:28.590  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c252600 mBlastBufferQueue=0xb400006dd4c42800 fn= 13 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.591  2594  2950 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.591  2594  2938 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.591  2594  2938 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.593  2594  2594 I View    : setRequestedFrameRate frameRate=NaN, this=androidx.compose.ui.platform.AndroidComposeView{5b70567 VFED..... ........ 0,0-36,56 aid=8}, caller=android.view.ViewGroup.setRequestedFrameRate:10045 androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:1 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:140 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 
+07-04 08:44:28.593  2594  2594 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{bb94ab3 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:1 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:150 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.View.draw:26477 
+07-04 08:44:28.593  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.594  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.595  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.599  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(474.19138, 1549.3372, 688.499, 1794.5065)
+07-04 08:44:28.599  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(492.5624, 1576.4614, 670.12805, 1756.4323)
+07-04 08:44:28.599  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(483.90994, 1576.4614, 661.4756, 1756.4323)
+07-04 08:44:28.600  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c252800 mBlastBufferQueue=0xb400006dd4c42800 fn= 14 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.602  2594  2951 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.602  2594  2951 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.602  2594  2951 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.604  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.604  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.605  2594  2594 I View    : setRequestedFrameRate frameRate=NaN, this=androidx.compose.ui.platform.AndroidComposeView{5b70567 VFED..... ........ 0,0-36,56 aid=8}, caller=android.view.ViewGroup.setRequestedFrameRate:10045 androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:1 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:140 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 
+07-04 08:44:28.605  2594  2594 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{bb94ab3 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:1 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:150 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.View.draw:26477 
+07-04 08:44:28.606  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.608  1505  1771 V MdnieScenarioControlService: mAclOffEnabled : false
+07-04 08:44:28.610  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(483.90994, 1634.3406, 661.4756, 1814.3114)
+07-04 08:44:28.610  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(497.69275, 1646.8092, 647.69275, 1796.8092)
+07-04 08:44:28.610  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(489.20264, 1646.8092, 639.20264, 1796.8092)
+07-04 08:44:28.611  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c252a00 mBlastBufferQueue=0xb400006dd4c42800 fn= 15 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.614  2594  2947 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.614  2594  2947 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.614  2594  2947 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.615  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.615  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.616  2594  2594 I View    : setRequestedFrameRate frameRate=NaN, this=androidx.compose.ui.platform.AndroidComposeView{5b70567 VFED..... ........ 0,0-36,56 aid=8}, caller=android.view.ViewGroup.setRequestedFrameRate:10045 androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:1 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:140 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 
+07-04 08:44:28.616  2594  2594 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{bb94ab3 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:1 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:150 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.View.draw:26477 
+07-04 08:44:28.617  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.618  1505  3163 I NSLocationMonitor: getGPSUsingApps() called
+07-04 08:44:28.619  3133  2171 I NSLocationManager_FLP: getGPSUsingApps, No change
+07-04 08:44:28.621  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(489.20264, 1696.523, 639.20264, 1846.523)
+07-04 08:44:28.621  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(489.20264, 1696.523, 639.20264, 1846.523)
+07-04 08:44:28.621  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(481.8343, 1696.523, 631.8343, 1846.523)
+07-04 08:44:28.621  1505  3163 W Binder  : Outgoing transactions from this process must be FLAG_ONEWAY
+07-04 08:44:28.621  1505  3163 W Binder  : java.lang.Throwable
+07-04 08:44:28.621  1505  3163 W Binder  : 	at android.os.BinderProxy.transact(BinderProxy.java:575)
+07-04 08:44:28.621  1505  3163 W Binder  : 	at android.bluetooth.IBluetoothGatt$Stub$Proxy.getAdvertisingSetUids(IBluetoothGatt.java:992)
+07-04 08:44:28.621  1505  3163 W Binder  : 	at android.bluetooth.BluetoothAdapter.getAdvertisingSetUids(BluetoothAdapter.java:1995)
+07-04 08:44:28.621  1505  3163 W Binder  : 	at android.bluetooth.BluetoothAdapter.getHWUsingApps(BluetoothAdapter.java:2266)
+07-04 08:44:28.621  1505  3163 W Binder  : 	at com.android.server.am.mars.filter.filter.BlueToothConnectedFilter.updateBTUsingPackages(qb/109650145 1cd1086f2bb7a49c76d92c22f8fdd54df60ee9d0060cc3a0d3134846f736198b:22)
+07-04 08:44:28.621  1505  3163 W Binder  : 	at com.android.server.am.FreecessController.freeze(qb/109650145 1cd1086f2bb7a49c76d92c22f8fdd54df60ee9d0060cc3a0d3134846f736198b:126)
+07-04 08:44:28.621  1505  3163 W Binder  : 	at com.android.server.am.FreecessHandler$MainHandler.handleLcdOnFreeze(qb/109650145 1cd1086f2bb7a49c76d92c22f8fdd54df60ee9d0060cc3a0d3134846f736198b:55)
+07-04 08:44:28.621  1505  3163 W Binder  : 	at com.android.server.am.FreecessHandler$MainHandler.handleMessage(qb/109650145 1cd1086f2bb7a49c76d92c22f8fdd54df60ee9d0060cc3a0d3134846f736198b:1686)
+07-04 08:44:28.621  1505  3163 W Binder  : 	at android.os.Handler.dispatchMessage(Handler.java:132)
+07-04 08:44:28.621  1505  3163 W Binder  : 	at android.os.Looper.dispatchMessage(Looper.java:358)
+07-04 08:44:28.621  1505  3163 W Binder  : 	at android.os.Looper.loopOnce(Looper.java:288)
+07-04 08:44:28.621  1505  3163 W Binder  : 	at android.os.Looper.loop(Looper.java:392)
+07-04 08:44:28.621  1505  3163 W Binder  : 	at android.os.HandlerThread.run(HandlerThread.java:139)
+07-04 08:44:28.622  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c252c00 mBlastBufferQueue=0xb400006dd4c42800 fn= 16 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.624  2594  2946 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.624  2594  2946 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.624  2594  2946 D NotificationIconContainerStatusBarViewModel: current tint area is empty!!!
+07-04 08:44:28.624  2594  2594 I View    : setRequestedFrameRate frameRate=NaN, this=androidx.compose.ui.platform.AndroidComposeView{5b70567 VFED..... ........ 0,0-36,56 aid=8}, caller=android.view.ViewGroup.setRequestedFrameRate:10045 androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:1 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:140 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 
+07-04 08:44:28.625  2594  2594 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{bb94ab3 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:1 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:150 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.View.draw:26477 
+07-04 08:44:28.626  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.626  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.626  1505  3163 W Binder  : Outgoing transactions from this process must be FLAG_ONEWAY
+07-04 08:44:28.626  1505  3163 W Binder  : java.lang.Throwable
+07-04 08:44:28.626  1505  3163 W Binder  : 	at android.os.BinderProxy.transact(BinderProxy.java:575)
+07-04 08:44:28.626  1505  3163 W Binder  : 	at android.bluetooth.IBluetoothScan$Stub$Proxy.getScannerUids(IBluetoothScan.java:459)
+07-04 08:44:28.626  1505  3163 W Binder  : 	at android.bluetooth.BluetoothAdapter.getScannerUids(BluetoothAdapter.java:2041)
+07-04 08:44:28.626  1505  3163 W Binder  : 	at android.bluetooth.BluetoothAdapter.getHWUsingApps(BluetoothAdapter.java:2273)
+07-04 08:44:28.626  1505  3163 W Binder  : 	at com.android.server.am.mars.filter.filter.BlueToothConnectedFilter.updateBTUsingPackages(qb/109650145 1cd1086f2bb7a49c76d92c22f8fdd54df60ee9d0060cc3a0d3134846f736198b:22)
+07-04 08:44:28.626  1505  3163 W Binder  : 	at com.android.server.am.FreecessController.freeze(qb/109650145 1cd1086f2bb7a49c76d92c22f8fdd54df60ee9d0060cc3a0d3134846f736198b:126)
+07-04 08:44:28.626  1505  3163 W Binder  : 	at com.android.server.am.FreecessHandler$MainHandler.handleLcdOnFreeze(qb/109650145 1cd1086f2bb7a49c76d92c22f8fdd54df60ee9d0060cc3a0d3134846f736198b:55)
+07-04 08:44:28.626  1505  3163 W Binder  : 	at com.android.server.am.FreecessHandler$MainHandler.handleMessage(qb/109650145 1cd1086f2bb7a49c76d92c22f8fdd54df60ee9d0060cc3a0d3134846f736198b:1686)
+07-04 08:44:28.626  1505  3163 W Binder  : 	at android.os.Handler.dispatchMessage(Handler.java:132)
+07-04 08:44:28.626  1505  3163 W Binder  : 	at android.os.Looper.dispatchMessage(Looper.java:358)
+07-04 08:44:28.626  1505  3163 W Binder  : 	at android.os.Looper.loopOnce(Looper.java:288)
+07-04 08:44:28.626  1505  3163 W Binder  : 	at android.os.Looper.loop(Looper.java:392)
+07-04 08:44:28.626  1505  3163 W Binder  : 	at android.os.HandlerThread.run(HandlerThread.java:139)
+07-04 08:44:28.628  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.629  1505  3163 D FreecessHandler: skipping freeze org.telegram.messenger(10703) result : 42
+07-04 08:44:28.629  1505  3163 D FreecessHandler: stop trying to freeze org.telegram.messenger
+07-04 08:44:28.632  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(481.8343, 1738.2255, 631.8343, 1888.2255)
+07-04 08:44:28.632  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(481.8343, 1738.2255, 631.8343, 1888.2255)
+07-04 08:44:28.632  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(475.5854, 1738.2255, 625.5854, 1888.2255)
+07-04 08:44:28.633  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c252e00 mBlastBufferQueue=0xb400006dd4c42800 fn= 17 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.636  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.636  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.639  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.643  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(475.5854, 1772.3153, 625.5854, 1922.3153)
+07-04 08:44:28.644  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(475.5854, 1772.3153, 625.5854, 1922.3153)
+07-04 08:44:28.644  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(470.41498, 1772.3153, 620.415, 1922.3153)
+07-04 08:44:28.645  1505  1677 D InputReader: Btn_touch(1): value=1 when=1057883.700153
+07-04 08:44:28.645  1505  1677 I InputReader: Touch event's action is 0x0 (id=6, t=0) [pCnt=1, s=0.1034 ] when=1057883.700153
+07-04 08:44:28.646  1505  1676 I InputDispatcher: Delivering touch to (2594): action: 0x4, f=0x0, d=0, '55d7c47', t=1 
+07-04 08:44:28.646  1505  1676 I InputDispatcher: Delivering touch to (1505): action: 0x0, f=0x0, d=0, 'recents', t=1 
+07-04 08:44:28.646  1505  1529 I GestureDetector: obtain mCurrentDownEvent. id: 721782612 caller: com.android.server.wm.SystemGesturesPointerEventListener.onPointerEvent:17 com.android.server.wm.PointerEventDispatcher.onInputEvent:51 android.view.InputEventReceiver.dispatchInputEvent:369 
+07-04 08:44:28.646  1505  1529 I GestureDetector: obtain mCurrentDownEvent. id: 721782612 caller: com.android.server.wm.SystemPerformancePointerEventListener.onPointerEvent:13 com.android.server.wm.PointerEventDispatcher.onInputEvent:51 android.view.InputEventReceiver.dispatchInputEvent:369 
+07-04 08:44:28.647  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c27d000 mBlastBufferQueue=0xb400006dd4c42800 fn= 18 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.647  3002  3002 I HoneySpace.InputConsumerProxy: touchInProgress true
+07-04 08:44:28.648  3961  3961 I SemDvfsHyPerManager: acquire hyper - TATouchBoost/3961@2, type = -999
+07-04 08:44:28.648  3961  3961 I SemDvfsHyPerManager: acquire hyper - TaskTurbo/3961@3, type = -999
+07-04 08:44:28.648   941   968 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 7854668  [3961 / 2]    HINT :      list : [TABoost / 40] [TIMEOUT / 1500] 
+07-04 08:44:28.648   941   968 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 7858633  [3961 / 3]    HINT :      list : [TaskTurbo / 15] [TIMEOUT / 1500] 
+07-04 08:44:28.649  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.649  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.649  3002  3002 I HoneySpace.GestureTouchEventTrackerImpl: sendToInputProxy[0]: down - 1057883700
+07-04 08:44:28.649  3002  3002 I HoneySpace.HomescreenPot: gestureTouchEventTracker touch event : 0
+07-04 08:44:28.649  1000  1000 E SurfaceFlinger: alpha changed 0.035 -> 0.000 - Surface(name=Task=4599#539428)/@0x3ffff86_transition-leash#539706
+07-04 08:44:28.649  3002  3002 I HoneySpace.LongPressTouchController: ACTION_DOWN, (566.0, 2332.0)
+07-04 08:44:28.650  3002  3002 I HoneySpace.WorkspaceFastRecyclerView: canHandleDoubleTapEvent: true (currentRank: 0, point: PointF(566.0, 2332.0))
+07-04 08:44:28.650  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.650  3002  3002 I HoneySpace.LongPressTouchController: is in gestureArea, gestureInsets = Insets{left=63, top=130, right=63, bottom=56}
+07-04 08:44:28.651  3002  3002 I HoneySpace.WorkspaceFastRecyclerView: canHandleDoubleTapEvent: true (currentRank: 0, point: PointF(566.0, 2332.0))
+07-04 08:44:28.652   951   961 I mtkpower@impl: [setMode] type:6, enabled:0
+07-04 08:44:28.652   951   961 E mtkpower@impl: [setMode] unknown type
+07-04 08:44:28.653  1000  1000 D SurfaceFlinger: Display 4627039422300187648 HWC layers:
+07-04 08:44:28.653  1000  1000 D SurfaceFlinger:        DEVICE |           45363444580518 | 00000100 | RGBA_8888    |   66.0  142.0 1014.0 2198.0 |    0    0 1080 2340 | Wallpaper BBQ wrapper 5_system#320879 (3268)
+07-04 08:44:28.653  1000  1000 D SurfaceFlinger:        DEVICE |           12893491949762 | 00002100 | RGBA_8888    |    0.0    0.0 1080.0 2340.0 |    0    0 1080 2340 | com.sec.android.app.launcher/com.sec[...]vities.LauncherActivity$_3002#539702 (16)
+07-04 08:44:28.653  1000  1000 D SurfaceFlinger:        DEVICE |           12893491949586 | 00002100 | RGBA_8888    |    0.0    0.0    1.0    1.0 |  539 2339  540 2340 | RecentsTransitionOverlay$_3002#114 (212699)
+07-04 08:44:28.653  1000  1000 D SurfaceFlinger:        DEVICE |           11141145514066 | 00002100 | RGBA_8888    |    0.0    0.0 1080.0  100.0 |    0    0 1080  100 | StatusBar$_2594#90 (496761)
+07-04 08:44:28.653  1000  1000 D SurfaceFlinger:        DEVICE |           11141145514062 | 00002100 | RGBA_8888    |    0.0    0.0 1080.0  135.0 |    0 2205 1080 2340 | NavigationBar0$_2594#86 (79856)
+07-04 08:44:28.653  1000  1000 D SurfaceFlinger: 
+07-04 08:44:28.657  1505  1529 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 760999
+07-04 08:44:28.657  1505  1529 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 760999
+07-04 08:44:28.659  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.659  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.659  3002  3002 I GestureDetector: obtain mCurrentDownEvent. id: 721782612 caller: com.honeyspace.ui.honeypots.homescreen.presentation.HomeView.e:150 com.honeyspace.ui.honeypots.homescreen.presentation.HomeView.dispatchTouchEvent:450 d8.b.emit:512 
+07-04 08:44:28.659  3002  3002 I HoneySpace.HomeView: findControllerToHandleTouch ev = 0
+07-04 08:44:28.659  3002  3002 I HoneySpace.HoneyWindowController: windowMap[it.hashCode()]?.get()=com.android.internal.policy.PhoneWindow@16e2410
+07-04 08:44:28.659  3002  3002 I HoneySpace.StatusBarTouchController: canInterceptTouch showNotificationPanel : true systemUiProxy.isActive() = true honeyScreenManager.currentHoneyScreen : HOME honeyScreen.currentHoneyState : com.honeyspace.sdk.HomeScreen$Normal@4593334
+07-04 08:44:28.660  3002  3002 I HoneySpace.FinderTouchController: onControllerInterceptTouchEvent :: canInterceptTouch() = false, QuickOptionUtil.isShowQuickOption() : false QuickOptionUtil.isDragging : false NowBriefBlurOption.isShown() : false
+07-04 08:44:28.660  3002  3002 I HoneySpace.HomeAppsTouchController: currentChangeState : com.honeyspace.sdk.HomeScreen$Normal@4593334, currentHoneyState : com.honeyspace.sdk.HomeScreen$Normal@4593334, EditLockPopup : false, isOpenFolderMode : false, isChildScrolling : false, isDragAnimRunning : false
+07-04 08:44:28.660  3002  3002 I HoneySpace.HomeAppsTouchController: currentChangeState : com.honeyspace.sdk.HomeScreen$Normal@4593334, currentHoneyState : com.honeyspace.sdk.HomeScreen$Normal@4593334, EditLockPopup : false, isOpenFolderMode : false, isChildScrolling : false, isDragAnimRunning : false
+07-04 08:44:28.660  3002  3002 I HoneySpace.HomeAppsTouchController: onControllerInterceptTouchEvent action down can not intercept 2332.0 // Insets{left=63, top=130, right=63, bottom=56}
+07-04 08:44:28.660  3002  3002 I HoneySpace.PageEditTouchController: onControllerInterceptTouchEvent, isShowQuickOption=false, isDragging=false, isAvailablePinchZoomState=true, homeDataLoading=false, isRunningPageReorder=false, currentChangeState=com.honeyspace.sdk.HomeScreen$Normal@4593334, gestureRunning=true, appClosing=true,
+07-04 08:44:28.660  3002  3002 I HoneySpace.MinusOnePageController: onControllerInterceptTouchEvent :: , QuickOptionUtil.isShowQuickOption = false, QuickOptionUtil.isDragging = false, isOnStateTransition = false, isTouchEventInGestureActionArea = true, isDragAnimRunning = false, isAppClosing = true, isInternalDex false, NowBriefBlur.isShown = false
+07-04 08:44:28.662  3002  3002 I HoneySpace.GestureInputHandler: reuse session data: {deviceState=DeviceState(naviMode=NO_BUTTON, navigationBarHeight=70, hint=false, transparentHint=true, rotation=0, displayId=0, displaySize=Point(1080, 2340), displayCutout=DisplayCutout{insets=Rect(0, 96 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(472, 0 - 608, 96), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2340 physicalDisplayWidth=1080 physicalDisplayHeight=2340 density={2.8125} cutoutSpec={M 0,0 H -24.88888888888889 V 35.55555555555556 H 24.88888888888889 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}} sideOverrides={}}, isNavCanMove=false, isTablet=false, extraDisplayInfo=ExtraDisplayInfo(rotation=-1, displayId=-1, displaySize=Point(0, 0), displayCutout=null, foldState=-1), enableOverlayWindow=false), region=RectF(0.0, 2270.0, 1080.0, 2340.0), regionPosition=com.honeyspace.gesture.region.RegionPosition$BOTTOM@30ef191, insensitiveRegion=RectF(0.0, 0.0, 1080.0, 2340.3), disableQuickSwitchRegion=RectF(0.0, 0.0, 1080.0, 2292.0), topTask=com.honeyspace.gesture.usecase.TopTaskUseCase@342f92d, event=MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=566.0, y[0]=2332.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=1057883700, downTime=1057883700, deviceId=6, source=0x1002, displayId=0, eventId=721782612 }, systemGestureUseCase=com.honeyspace.gesture.usecase.SystemGestureUseCase@13dfe62, systemUiFlags=268566528, userUnlockRepository=com.honeyspace.gesture.repository.UserUnlockRepository@cb35bf3, assistantAvailable=false, spayWidth=0, inputMonitor=com.honeyspace.gesture.inputproxy.InputMonitorProxyImpl@f5460b0, runningTaskId=-1, possibleHomeQuickSwitch=false, taskBarGestureActive=false, gestureSettingsUseCase=com.honeyspace.gesture.usecase.GestureSettingsUseCase@482fb29, taskViewInteraction=com.honeyspace.gesture.recentinteraction.TaskViewInteraction@f019eae, isWaitingRecentsAnimationStart=false}
+07-04 08:44:28.663  3002  3002 I HoneySpace.RegionManagerImpl: getRegionType called with: x = 566.0, y = 2332.0, type=SEARCLE
+07-04 08:44:28.663  3002  3002 I HoneySpace.RegionManagerImpl: getRegionType() called with: x = 566.0, y = 2332.0, type=SEARCLE
+07-04 08:44:28.663  3002  3002 W HoneySpace.RecentsAnimationState: canStartSystemGesture, return true by !isHomeDisabled
+07-04 08:44:28.665  3002  3002 I HoneySpace.InputConsumerFactory: screenInputConsumer: HomeScreenInputConsumer
+07-04 08:44:28.665  3002  3002 I HoneySpace.InputConsumerFactory: samsungInputConsumer: NO_OP
+07-04 08:44:28.665  3002  3002 I HoneySpace.RegionManagerImpl: getRegionType called with: x = 566.0, y = 2332.0, type=SEARCLE
+07-04 08:44:28.665  3002  3002 I HoneySpace.InputConsumerFactory: generalInputConsumers: [SearcleInputConsumer, NO_OP]
+07-04 08:44:28.665  3002  3002 I HoneySpace.GestureInputHandler: inputConsumers = [com.honeyspace.gesture.inputconsumer.SearcleInputConsumer@26f831b, com.honeyspace.gesture.inputconsumer.HomeScreenInputConsumer@54f3cb8]
+07-04 08:44:28.666  3002  3002 I HoneySpace.RegionManagerImpl: getRegionType called with: x = 566.0, y = 2332.0, type=SEARCLE
+07-04 08:44:28.666  3002  3002 I HoneySpace.InputSession: inputConsumers = SearcleInputConsumer|HomeScreenInputConsumer
+07-04 08:44:28.666  3002  3002 I HoneySpace.InputSession: open
+07-04 08:44:28.666  3002 30140 I HoneySpace.SystemUiProxyImpl: startHintVI, id = 1
+07-04 08:44:28.666  3002  3002 I GestureDetector: obtain mCurrentDownEvent. id: 721782612 caller: com.honeyspace.gesture.motiondetector.GestureMotionDetector.onTouchEvent:7 com.honeyspace.gesture.session.InputSession.onMotionEvent:151 com.honeyspace.gesture.GestureInputHandler.inputHandle:199 
+07-04 08:44:28.666  3002  3002 I HoneySpace.GestureMotionDetector: onDown
+07-04 08:44:28.666  2594  4119 D Navbar.Store: handleEvent(0) StartBottomGestureHintVI(hintId=1) [Module] LauncherProxyService
+07-04 08:44:28.666  3002  3002 I HoneySpace.SearcleInputConsumer: startSearcle
+07-04 08:44:28.666  2594  4119 D Navbar.Store: [Band]GESTURE_PACK_START_HINT_VI
+07-04 08:44:28.666  2594  3283 D LauncherProxyService: startSearcle
+07-04 08:44:28.667  2594  2594 D SearcleManager: startSearcleByHomeKey down = true, longPress = false
+07-04 08:44:28.667  3002  3002 I HoneySpace.HintStateAnimationHelper: start
+07-04 08:44:28.667  3002  3002 I HoneySpace.HomescreenPot: gestureTouchEventTracker touch event : 2
+07-04 08:44:28.667  3002  3002 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 760999
+07-04 08:44:28.667  3002  3002 I HoneySpace.HomeView: findControllerToHandleTouch ev = 2
+07-04 08:44:28.667  3002  3002 I HoneySpace.FinderTouchController: onControllerInterceptTouchEvent :: canInterceptTouch() = false, QuickOptionUtil.isShowQuickOption() : false QuickOptionUtil.isDragging : false NowBriefBlurOption.isShown() : false
+07-04 08:44:28.667  3002  3002 I HoneySpace.HomeAppsTouchController: currentChangeState : com.honeyspace.sdk.HomeScreen$Normal@4593334, currentHoneyState : com.honeyspace.sdk.HomeScreen$Normal@4593334, EditLockPopup : false, isOpenFolderMode : false, isChildScrolling : false, isDragAnimRunning : false
+07-04 08:44:28.667  3002  3002 I HoneySpace.HomeAppsTouchController: skip move event null false
+07-04 08:44:28.667  3002  3002 I HoneySpace.PageEditTouchController: onControllerInterceptTouchEvent, isShowQuickOption=false, isDragging=false, isAvailablePinchZoomState=true, homeDataLoading=false, isRunningPageReorder=false, currentChangeState=com.honeyspace.sdk.HomeScreen$Normal@4593334, gestureRunning=true, appClosing=true,
+07-04 08:44:28.667  3002  3002 I HoneySpace.MinusOnePageController: onControllerInterceptTouchEvent :: , QuickOptionUtil.isShowQuickOption = false, QuickOptionUtil.isDragging = false, isOnStateTransition = false, isTouchEventInGestureActionArea = true, isDragAnimRunning = false, isAppClosing = true, isInternalDex false, NowBriefBlur.isShown = false
+07-04 08:44:28.668  3002  3002 I GestureDetector: obtain mCurrentMotionEventRaw. action: 2 id: 760999
+07-04 08:44:28.668  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(470.41498, 1823.1986, 620.415, 1973.1986)
+07-04 08:44:28.668  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(470.41498, 1823.1986, 620.415, 1973.1986)
+07-04 08:44:28.668  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(462.51587, 1823.1986, 612.51587, 1973.1986)
+07-04 08:44:28.671  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c27d200 mBlastBufferQueue=0xb400006dd4c42800 fn= 19 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.671  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.672  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.672  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.677  3002  3002 I HoneySpace.HomescreenPot: gestureTouchEventTracker touch event : 2
+07-04 08:44:28.677  3002  3002 I HoneySpace.HomeView: findControllerToHandleTouch ev = 2
+07-04 08:44:28.677  3002  3002 I HoneySpace.FinderTouchController: onControllerInterceptTouchEvent :: canInterceptTouch() = false, QuickOptionUtil.isShowQuickOption() : false QuickOptionUtil.isDragging : false NowBriefBlurOption.isShown() : false
+07-04 08:44:28.677  3002  3002 I HoneySpace.HomeAppsTouchController: currentChangeState : com.honeyspace.sdk.HomeScreen$Normal@4593334, currentHoneyState : com.honeyspace.sdk.HomeScreen$Normal@4593334, EditLockPopup : false, isOpenFolderMode : false, isChildScrolling : false, isDragAnimRunning : false
+07-04 08:44:28.677  3002  3002 I HoneySpace.HomeAppsTouchController: skip move event null false
+07-04 08:44:28.677  3002  3002 I HoneySpace.PageEditTouchController: onControllerInterceptTouchEvent, isShowQuickOption=false, isDragging=false, isAvailablePinchZoomState=true, homeDataLoading=false, isRunningPageReorder=false, currentChangeState=com.honeyspace.sdk.HomeScreen$Normal@4593334, gestureRunning=true, appClosing=true,
+07-04 08:44:28.677  3002  3002 I HoneySpace.MinusOnePageController: onControllerInterceptTouchEvent :: , QuickOptionUtil.isShowQuickOption = false, QuickOptionUtil.isDragging = false, isOnStateTransition = false, isTouchEventInGestureActionArea = true, isDragAnimRunning = false, isAppClosing = true, isInternalDex false, NowBriefBlur.isShown = false
+07-04 08:44:28.679  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, angle = 80.4
+07-04 08:44:28.679  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ActionDragInTaskbar(event=MotionEvent { action=ACTION_MOVE, actionButton=0, id[0]=0, x[0]=570.22656, y[0]=2307.083, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=1, eventTime=1057883726, downTime=1057883700, deviceId=6, source=0x1002, displayId=0, eventId=854996523 }, distanceX=4.2265625, distanceY=-24.916992)
+07-04 08:44:28.679  3002  3002 I HoneySpace.SearcleInputConsumer: restart timer: 4.2265625, -24.916992
+07-04 08:44:28.679  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(462.51587, 1838.3954, 612.51587, 1988.3954)
+07-04 08:44:28.679  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(462.51587, 1838.3954, 612.51587, 1988.3954)
+07-04 08:44:28.679  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(460.06305, 1838.3954, 610.06305, 1988.3954)
+07-04 08:44:28.680  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.681  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.681  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c27d800 mBlastBufferQueue=0xb400006dd4c42800 fn= 20 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.683  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.686  1505  1529 D WindowManager: requestTransientBars: swipeTarget=Window{55d7c47 u0 NavigationBarView}, controlTarget=Window{3639f74 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}, canShowTransient=true, restorePositionTypes=0x3, from=com.android.server.wm.DisplayPolicy.requestTransientBars:171 com.android.server.wm.DisplayPolicy$1.onSwipeFromBottom:21 
+07-04 08:44:28.688  3002  3002 I HoneySpace.HomescreenPot: gestureTouchEventTracker touch event : 2
+07-04 08:44:28.688  3002  3002 I HoneySpace.HomeView: findControllerToHandleTouch ev = 2
+07-04 08:44:28.688  3002  3002 I HoneySpace.FinderTouchController: onControllerInterceptTouchEvent :: canInterceptTouch() = false, QuickOptionUtil.isShowQuickOption() : false QuickOptionUtil.isDragging : false NowBriefBlurOption.isShown() : false
+07-04 08:44:28.688  3002  3002 I HoneySpace.HomeAppsTouchController: currentChangeState : com.honeyspace.sdk.HomeScreen$Normal@4593334, currentHoneyState : com.honeyspace.sdk.HomeScreen$Normal@4593334, EditLockPopup : false, isOpenFolderMode : false, isChildScrolling : false, isDragAnimRunning : false
+07-04 08:44:28.688  3002  3002 I HoneySpace.HomeAppsTouchController: skip move event null false
+07-04 08:44:28.688  3002  3002 I HoneySpace.PageEditTouchController: onControllerInterceptTouchEvent, isShowQuickOption=false, isDragging=false, isAvailablePinchZoomState=true, homeDataLoading=false, isRunningPageReorder=false, currentChangeState=com.honeyspace.sdk.HomeScreen$Normal@4593334, gestureRunning=true, appClosing=true,
+07-04 08:44:28.688  3002  3002 I HoneySpace.MinusOnePageController: onControllerInterceptTouchEvent :: , QuickOptionUtil.isShowQuickOption = false, QuickOptionUtil.isDragging = false, isOnStateTransition = false, isTouchEventInGestureActionArea = true, isDragAnimRunning = false, isAppClosing = true, isInternalDex false, NowBriefBlur.isShown = false
+07-04 08:44:28.690  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, angle = 76.2
+07-04 08:44:28.690  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ActionDragInTaskbar(event=MotionEvent { action=ACTION_MOVE, actionButton=0, id[0]=0, x[0]=583.9541, y[0]=2258.6426, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=2, eventTime=1057883737, downTime=1057883700, deviceId=6, source=0x1002, displayId=0, eventId=147192948 }, distanceX=17.954102, distanceY=-73.35742)
+07-04 08:44:28.690  3002  3002 I HoneySpace.SearcleInputConsumer: cancelSearcle
+07-04 08:44:28.690  2594  4119 D LauncherProxyService: cancelSearcle
+07-04 08:44:28.690  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(460.06305, 1847.4678, 610.06305, 1997.4678)
+07-04 08:44:28.690  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(460.06305, 1847.4678, 610.06305, 1997.4678)
+07-04 08:44:28.690  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(458.53516, 1847.4678, 608.53516, 1997.4678)
+07-04 08:44:28.691  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.691  2594  2594 D SearcleManager: startSearcleByHomeKey down = false, longPress = false
+07-04 08:44:28.691  2594  2594 D SearcleManager: startSearcleByHomeKey currentDownCount = 0 tipShownCount = 2 
+07-04 08:44:28.691  2594  2594 D SearcleManager: startSearcleByHomeKey isInstalledCTSApp = UNINSTALLED
+07-04 08:44:28.692  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.694  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.695  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c2a9200 mBlastBufferQueue=0xb400006dd4c42800 fn= 21 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.699  3002  3002 I HoneySpace.HomescreenPot: gestureTouchEventTracker touch event : 2
+07-04 08:44:28.699  3002  3002 I HoneySpace.HomeView: findControllerToHandleTouch ev = 2
+07-04 08:44:28.699  3002  3002 I HoneySpace.TouchDirectionDetector: displacementComponent = -115.413086
+07-04 08:44:28.699  3002  3002 I HoneySpace.TouchDirectionDetector: canScrollNegative direction = true
+07-04 08:44:28.699  3002  3002 I HoneySpace.TouchDirectionDetector: direction.isNegative(displacement) = false
+07-04 08:44:28.699  3002  3002 I HoneySpace.TouchDirectionDetector: canScrollPositive direction = false
+07-04 08:44:28.699  3002  3002 I HoneySpace.TouchDirectionDetector: direction.isPositive(displacement) = true
+07-04 08:44:28.699  3002  3002 I HoneySpace.FinderTouchController: onControllerInterceptTouchEvent :: canInterceptTouch() = false, QuickOptionUtil.isShowQuickOption() : false QuickOptionUtil.isDragging : false NowBriefBlurOption.isShown() : false
+07-04 08:44:28.699  3002  3002 I HoneySpace.HomeAppsTouchController: currentChangeState : com.honeyspace.sdk.HomeScreen$Normal@4593334, currentHoneyState : com.honeyspace.sdk.HomeScreen$Normal@4593334, EditLockPopup : false, isOpenFolderMode : false, isChildScrolling : false, isDragAnimRunning : false
+07-04 08:44:28.699  3002  3002 I HoneySpace.HomeAppsTouchController: skip move event null false
+07-04 08:44:28.699  3002  3002 I HoneySpace.PageEditTouchController: onControllerInterceptTouchEvent, isShowQuickOption=false, isDragging=false, isAvailablePinchZoomState=true, homeDataLoading=false, isRunningPageReorder=false, currentChangeState=com.honeyspace.sdk.HomeScreen$Normal@4593334, gestureRunning=true, appClosing=true,
+07-04 08:44:28.699  3002  3002 I HoneySpace.MinusOnePageController: onControllerInterceptTouchEvent :: , QuickOptionUtil.isShowQuickOption = false, QuickOptionUtil.isDragging = false, isOnStateTransition = false, isTouchEventInGestureActionArea = false, isDragAnimRunning = false, isAppClosing = true, isInternalDex false, NowBriefBlur.isShown = false
+07-04 08:44:28.701  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, angle = 73.2
+07-04 08:44:28.701  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, SwipeUp(event=MotionEvent { action=ACTION_MOVE, actionButton=0, id[0]=0, x[0]=600.78613, y[0]=2216.587, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=2, eventTime=1057883748, downTime=1057883700, deviceId=6, source=0x1002, displayId=0, eventId=658958187 }, angle=73.2)
+07-04 08:44:28.703  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.703  3002  3002 I HoneySpace.InputSession: inputConsumer activated: HomeScreenInputConsumer
+07-04 08:44:28.703  3002  3002 I HoneySpace.InputMonitorProxyImpl: pilferPointers com.android.systemui.shared.system.InputMonitorCompat@fc952e3
+07-04 08:44:28.703  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.704  1505  4168 D InputManagerService: pilferPointers
+07-04 08:44:28.704  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(458.53516, 1853.5142, 608.53516, 2003.5142)
+07-04 08:44:28.704  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(458.53516, 1853.5142, 608.53516, 2003.5142)
+07-04 08:44:28.704  1505  4168 I InputDispatcher: Channel [Gesture Monitor] swipe-up is stealing input gesture for device 6 from [recents_animation_input_consumer, [Gesture Monitor] PalmMotion, [Gesture Monitor] edge-swipe]
+07-04 08:44:28.704  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(457.4165, 1853.5142, 607.4165, 2003.5142)
+07-04 08:44:28.705  1505  4168 D InputDispatcher: Cancel for 'recents': input channel stole pointer stream, m=1
+07-04 08:44:28.705  1505  4168 I InputDispatcher: Delivering touch to (1505): action: 0x3, f=0x20, d=0, 'recents', t=1 
+07-04 08:44:28.705  3002  3002 I HoneySpace.WorkspaceViewModel: StartContentAnimation, type: AppClose, inProgress: false
+07-04 08:44:28.705  3002  3002 I HoneySpace.HomescreenPot: playContentAnimator end, skip alpha: false, state transition : false, paramType = AppClose, state = com.honeyspace.sdk.HomeScreen$Normal@4593334 -> com.honeyspace.sdk.HomeScreen$Normal@4593334
+07-04 08:44:28.706  3002  3002 I HoneySpace.HoneyScreenManagerImpl: transitionAnimator is ended, onCancel: false
+07-04 08:44:28.706  3002  3002 I HoneySpace.ContentsAnimator: ContentsAnimator end [88975183]
+07-04 08:44:28.707  3002  4266 I HoneySpace.SPayHandler: updateSpayHandler(), show = true, defaultPage = true, minusOnePage = false, f6.G.playContentAnimator(SourceFile:273)
+07-04 08:44:28.709  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c2bf600 mBlastBufferQueue=0xb400006dd4c42800 fn= 22 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.709  3002  3002 I HoneySpace.GestureTouchEventTrackerImpl: sendToInputProxy[0]: up, cancel - 1057883700
+07-04 08:44:28.709  3002  3002 I HoneySpace.HomescreenPot: gestureTouchEventTracker touch event : 3
+07-04 08:44:28.709  3002  3002 I HoneySpace.HomeView: findControllerToHandleTouch ev = 3
+07-04 08:44:28.709  3002  3002 I HoneySpace.FinderTouchController: onControllerInterceptTouchEvent :: canInterceptTouch() = false, QuickOptionUtil.isShowQuickOption() : false QuickOptionUtil.isDragging : false NowBriefBlurOption.isShown() : false
+07-04 08:44:28.709  3002  3002 I HoneySpace.HomeAppsTouchController: currentChangeState : com.honeyspace.sdk.HomeScreen$Normal@4593334, currentHoneyState : com.honeyspace.sdk.HomeScreen$Normal@4593334, EditLockPopup : false, isOpenFolderMode : false, isChildScrolling : false, isDragAnimRunning : false
+07-04 08:44:28.709  3002  3002 I HoneySpace.PageEditTouchController: onControllerInterceptTouchEvent, isShowQuickOption=false, isDragging=false, isAvailablePinchZoomState=true, homeDataLoading=false, isRunningPageReorder=false, currentChangeState=com.honeyspace.sdk.HomeScreen$Normal@4593334, gestureRunning=true, appClosing=true,
+07-04 08:44:28.709  3002  3002 I HoneySpace.MinusOnePageController: onControllerInterceptTouchEvent :: , QuickOptionUtil.isShowQuickOption = false, QuickOptionUtil.isDragging = false, isOnStateTransition = false, isTouchEventInGestureActionArea = false, isDragAnimRunning = false, isAppClosing = true, isInternalDex false, NowBriefBlur.isShown = false
+07-04 08:44:28.709  3002  3002 I HoneySpace.InputConsumerProxy: touchInProgress false
+07-04 08:44:28.710  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.711  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(457.4165, 1854.5522, 607.4165, 2004.5522)
+07-04 08:44:28.711  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(457.4165, 1854.5522, 607.4165, 2004.5522)
+07-04 08:44:28.711  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(457.1731, 1854.5522, 607.1731, 2004.5522)
+07-04 08:44:28.713  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.713  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.714  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c2c8000 mBlastBufferQueue=0xb400006dd4c42800 fn= 23 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.717  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.721  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.722  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(457.1731, 1854.5149, 607.1731, 2004.5149)
+07-04 08:44:28.722  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(457.1731, 1854.5149, 607.1731, 2004.5149)
+07-04 08:44:28.722  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(457.0257, 1854.5149, 607.0257, 2004.5149)
+07-04 08:44:28.724  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c2c8200 mBlastBufferQueue=0xb400006dd4c42800 fn= 24 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.725  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.726  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.728  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.732  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.733  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(457.0257, 1852.4742, 607.0257, 2002.4742)
+07-04 08:44:28.733  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(457.0257, 1852.4742, 607.0257, 2002.4742)
+07-04 08:44:28.733  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(457.1914, 1852.4742, 607.1914, 2002.4742)
+07-04 08:44:28.735  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c2d0000 mBlastBufferQueue=0xb400006dd4c42800 fn= 25 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.736  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.737  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.739  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.743  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.744  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(457.1914, 1848.9661, 607.1914, 1998.9661)
+07-04 08:44:28.744  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(457.59186, 1848.9661, 607.59186, 1998.9661)
+07-04 08:44:28.745  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c2d0200 mBlastBufferQueue=0xb400006dd4c42800 fn= 26 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.747  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.748  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.749  3961  3961 I SemDvfsHyPerManager: acquire hyper - TATouchBoost/3961@2, type = -999
+07-04 08:44:28.749  3961  3961 I SemDvfsHyPerManager: acquire hyper - TaskTurbo/3961@3, type = -999
+07-04 08:44:28.750   941   968 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 7854668  [3961 / 2]    HINT :      list : [TABoost / 40] [TIMEOUT / 1500] 
+07-04 08:44:28.750   941   968 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 7858633  [3961 / 3]    HINT :      list : [TaskTurbo / 15] [TIMEOUT / 1500] 
+07-04 08:44:28.750  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.755  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.756  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(457.59186, 1844.0074, 607.59186, 1994.0074)
+07-04 08:44:28.756  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(458.2163, 1844.0074, 608.2163, 1994.0074)
+07-04 08:44:28.758  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c2d0a00 mBlastBufferQueue=0xb400006dd4c42800 fn= 27 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.759  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.760  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.761  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.766  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.766  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(458.2163, 1838.8423, 608.2163, 1988.8423)
+07-04 08:44:28.766  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(458.89825, 1838.8423, 608.89825, 1988.8423)
+07-04 08:44:28.768  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c2d0c00 mBlastBufferQueue=0xb400006dd4c42800 fn= 28 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.770  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.770  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.772  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.777  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.777  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(458.89825, 1833.4109, 608.89825, 1983.4109)
+07-04 08:44:28.777  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(459.6355, 1833.4109, 609.6355, 1983.4109)
+07-04 08:44:28.780  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c2dc200 mBlastBufferQueue=0xb400006dd4c42800 fn= 29 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.781  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.782  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.783  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.788  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.788  3002  3002 I HoneySpace.GestureMotionDetector: onMotionPauseDetected
+07-04 08:44:28.788  3002  3002 I HoneySpace.GestureMotionDetector: onMotionPauseChanged, isPaused = true
+07-04 08:44:28.788  3002  3002 I HoneySpace.SearcleInputConsumer: cancelSearcle
+07-04 08:44:28.788  3002  3002 I HoneySpace.SettledEventImpl: onSettledEvent: KeyPressEvent(keyCode=187, displayId=0)
+07-04 08:44:28.788  3002  3002 I HoneySpace.SettledEventImpl: injectKey = 187
+07-04 08:44:28.788  2594  4119 D LauncherProxyService: cancelSearcle
+07-04 08:44:28.788  2594  2594 D SearcleManager: startSearcleByHomeKey down = false, longPress = false
+07-04 08:44:28.788  2594  2594 D SearcleManager: startSearcleByHomeKey currentDownCount = 0 tipShownCount = 2 
+07-04 08:44:28.788  2594  2594 D SearcleManager: startSearcleByHomeKey isInstalledCTSApp = UNINSTALLED
+07-04 08:44:28.791  3002  3002 I HoneySpace.KeyInjector: injectKey 187[RECENT]
+07-04 08:44:28.791  3002  3002 I HoneySpace.KeyInjector: pressKey, 187, displayId = 0
+07-04 08:44:28.792  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.792  1505  4168 D InputDispatcher: Inject key (3002/10139): action=0, f=0x48, d=0, time=1057883845000000
+07-04 08:44:28.792  1505  4168 D PhoneWindowManager: interceptKeyTq keycode=187 interactive=true keyguardActive=false policyFlags=2b000002
+07-04 08:44:28.793  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.793  1505  4168 D SingleKeyGesture: interceptKeyDown, info : KeyCode=KEYCODE_UNKNOWN, size=0
+07-04 08:44:28.793  1505  4168 D PhoneWindowManagerExt: interceptKeyTq code=187 down=true repeatCount=0 displayId=0 interactive=true powerCombination=false
+07-04 08:44:28.793  1505  4168 D PhoneWindowManager: interceptKeyTq interceptKeyResult=1
+07-04 08:44:28.793  1505  4168 D InputDispatcher: Inject key (3002/10139): action=1, f=0x48, d=0, time=1057883848000000
+07-04 08:44:28.793  1505  4168 D PhoneWindowManager: interceptKeyTq keycode=187 interactive=true keyguardActive=false policyFlags=2b000002
+07-04 08:44:28.794  1505  4168 D PhoneWindowManagerExt: interceptKeyTq code=187 down=false repeatCount=0 displayId=0 interactive=true powerCombination=false
+07-04 08:44:28.794  1505  4168 D PhoneWindowManager: interceptKeyTq interceptKeyResult=1
+07-04 08:44:28.794  3002  3002 I HoneySpace.HintStateAnimationHelper: holding
+07-04 08:44:28.795  1505  1676 D PhoneWindowManager: handleKeyGestureEvent, type=4 keyguardOn=false displayId=0
+07-04 08:44:28.796  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(459.6355, 1824.1082, 609.6355, 1974.1082)
+07-04 08:44:28.797  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(460.9308, 1824.1082, 610.9308, 1974.1082)
+07-04 08:44:28.797  1505  1531 D PhoneWindowManager: handleKeyGestureEvent, type=1003 keyguardOn=false displayId=0
+07-04 08:44:28.797  1505  1531 W PhoneWindowManager: Received a key gesture KeyGestureEvent { deviceId = -1, keycodes = [187, 4], modifierState = 0, keyGestureType = KEY_GESTURE_TYPE_LOCK_TASK_MODE_PINNED_RECENT_BACK, action = COMPLETE, displayId = 0, flags = CANCELLED, appLaunchData = null } that was not registered by this handler
+07-04 08:44:28.799  1505  1676 D PhoneWindowManager: handleKeyGestureEvent, type=4 keyguardOn=false displayId=0
+07-04 08:44:28.799  1505  1676 D PhoneWindowManager: toggleRecentApps
+07-04 08:44:28.801  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c32d400 mBlastBufferQueue=0xb400006dd4c42800 fn= 30 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.801  2594  2983 D OverviewProxyRecentsImpl: toggleRecentApps
+07-04 08:44:28.801  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.802  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(460.9308, 1821.7723, 610.9308, 1971.7723)
+07-04 08:44:28.802  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(461.26123, 1821.7723, 611.2612, 1971.7723)
+07-04 08:44:28.803  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.803  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.805  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c32d600 mBlastBufferQueue=0xb400006dd4c42800 fn= 31 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.805  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.808  3002  8426 I HoneySpace.TISBinder: onOverviewToggle
+07-04 08:44:28.810  3002  3052 I HoneySpace.TISBinder: onOverviewToggle - invoke event
+07-04 08:44:28.811  3002 30141 I HoneySpace.OverviewEventHandler: OverviewToggleEvent: false / true
+07-04 08:44:28.811  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.812  3002 30141 I HoneySpace.OverviewEventHandler: closeSystemWindow
+07-04 08:44:28.812  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(461.26123, 1816.8983, 611.2612, 1966.8983)
+07-04 08:44:28.813  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(461.9569, 1816.8983, 611.9569, 1966.8983)
+07-04 08:44:28.816  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.817  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.817  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c365600 mBlastBufferQueue=0xb400006dd4c42800 fn= 32 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.818  2594  2594 V ShellDragAndDrop: Receive android.intent.action.CLOSE_SYSTEM_DIALOGS
+07-04 08:44:28.819  2594  2773 V ShellDragAndDrop: Do not update drop target window visibility: window is already set to 4.
+07-04 08:44:28.819  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.820  3002 30141 I HoneySpace.OverviewEventHandler: sendRecentsToggleEvent() canOpenRecents: true, isExternalDisplay: false, isHomeTask: true, requestFocus: false, readyToCollectGestureEvent: true
+07-04 08:44:28.820  3002 30141 I HoneySpace.DvfsManager: HOME_GESTURE_BOOSTER acquire
+07-04 08:44:28.820  3002 30141 I HoneySpace.OverviewEventHandler: boostHomeGesture called
+07-04 08:44:28.820  3002  3038 I SemDvfsHyPerManager: acquire hyper - RECENTS_GESTURE_BOOSTER/3002@1, type = -999
+07-04 08:44:28.820  3002  3038 I HoneySpace.CustomFrequencyManager: enableGpisHint: true
+07-04 08:44:28.821  2594  2594 D PopupUI.PopupUI: PopupUIReceiver.onReceive() action : android.intent.action.CLOSE_SYSTEM_DIALOGS
+07-04 08:44:28.821   941   968 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 4510507  [3002 / 1]    HINT : RECENTS_GESTURE_BOOSTER    list : 
+07-04 08:44:28.821  2594  2594 D SimTrayProtectionViewModel: dismiss : isFoldedState()falseisRemoveSimtray() : true
+07-04 08:44:28.821  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.821  2594  2594 D LocationControllerImpl: onReceive() = android.intent.action.CLOSE_SYSTEM_DIALOGS
+07-04 08:44:28.822  3002 30141 I HoneySpace.OverviewEventHandler: requestFocus false
+07-04 08:44:28.822  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(461.9569, 1813.2303, 611.9569, 1963.2303)
+07-04 08:44:28.822  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(462.48578, 1813.2303, 612.4858, 1963.2303)
+07-04 08:44:28.824  3002  7029 I HoneySpace.LauncherProvider: call - android.uid.systemui:10067, get_internal_Dex_status, internal_dex_status
+07-04 08:44:28.825  3002  7029 I HoneySpace.ExternalMethodItem: updateRefsItemsByEntryPoints. HoneySpaceInfo(name=OneUI, displayId=0)
+07-04 08:44:28.826  2594  2594 D SecMultiSIMPreferredBarViewModel: onReceive() - action = android.intent.action.CLOSE_SYSTEM_DIALOGS
+07-04 08:44:28.826  2594  2594 D SecMultiSIMPreferredBarViewModel: Received broadcast that should dismiss popup: android.intent.action.CLOSE_SYSTEM_DIALOGS
+07-04 08:44:28.826  2594  2594 D #SAT_VolumeStarStore: dispatch [ACTION_DISMISS_REQUESTED with [STATE_NO_DISPATCH], currentAction={isFromOutside : true}, currentState={activeStream=3(vol=550), stream=3(vol=550) } isCaptionComponentEnabled : true, isVoiceCapable : true, isHasVibrator : true, timeOutControls : 30000, timeOutControlsText : 30000, iconCurrentState : 2, pinDevice : 0, stream : 3, timeOut : 30000, cutoutHeight : 0, ringerModeInternal : 2, iconTargetState : 2, earProtectLevel : 909, activeStream : 3, systemTimeNow : 1055494132}
+07-04 08:44:28.826  2594  2594 D #SAT_VolumeStarStore:   * New State : [STATE_NO_DISPATCH]
+07-04 08:44:28.826  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.826  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c365800 mBlastBufferQueue=0xb400006dd4c42800 fn= 33 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.826  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.826  3002  3002 I HoneySpace.ShellTransitionManager: startShellTransition com.honeyspace.sdk.transition.ShellTransition$Info@560b694, forceStart: false
+07-04 08:44:28.826  3002  3002 I HoneySpace.ShellTransitionManager: recents launch case while closing or isPairAppTransition:false
+07-04 08:44:28.827  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.828  3002 25648 I HoneySpace.OneUiSpace: received close system dialog reason=recentapps
+07-04 08:44:28.832  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.833  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(463.0389, 1809.6597, 613.0389, 1959.6597)
+07-04 08:44:28.835  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c36f600 mBlastBufferQueue=0xb400006dd4c42800 fn= 34 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.837  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.838  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.839  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.843  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.844  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(463.26392, 1808.207, 613.2639, 1958.207)
+07-04 08:44:28.845  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c36f800 mBlastBufferQueue=0xb400006dd4c42800 fn= 35 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.848  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.849  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.850  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.851 13474 13474 I adbd    : adbd service requested 'shell,v2,TERM=dumb:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-t' '500''
+07-04 08:44:28.853  3961  3961 I SemDvfsHyPerManager: acquire hyper - TATouchBoost/3961@2, type = -999
+07-04 08:44:28.853  3961  3961 I SemDvfsHyPerManager: acquire hyper - TaskTurbo/3961@3, type = -999
+07-04 08:44:28.854   941   968 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 7854668  [3961 / 2]    HINT :      list : [TABoost / 40] [TIMEOUT / 1500] 
+07-04 08:44:28.854   941   968 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 7858633  [3961 / 3]    HINT :      list : [TaskTurbo / 15] [TIMEOUT / 1500] 
+07-04 08:44:28.855  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.856  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(463.83572, 1804.5159, 613.8357, 1954.5159)
+07-04 08:44:28.859  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c383c00 mBlastBufferQueue=0xb400006dd4c42800 fn= 36 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.860  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.861  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.861  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.865  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.866  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(464.49182, 1800.2804, 614.4918, 1950.2804)
+07-04 08:44:28.869  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c384000 mBlastBufferQueue=0xb400006dd4c42800 fn= 37 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.870  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.871  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.872  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.877  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.877  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(464.952, 1797.3098, 614.952, 1947.3098)
+07-04 08:44:28.881  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.881  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c3a9400 mBlastBufferQueue=0xb400006dd4c42800 fn= 38 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.881  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.883  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}
+07-04 08:44:28.888  3002  3002 I HoneySpace.GestureMotionDetector: onScroll, ACTION_DRAG
+07-04 08:44:28.889  3002  3002 I HoneySpace.RectFAnimation: animateToFinalPosition RectF(465.0, 1797.0, 615.0, 1947.0)
+07-04 08:44:28.892  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.892  3002  4220 I VRI[LauncherActivity]@7c38133: mWNT: t=0xb400006f3c3a9600 mBlastBufferQueue=0xb400006dd4c42800 fn= 39 HdrRenderState mRenderHdrSdrRatio=1.0 caller= com.android.systemui.shared.launcher.ViewRootImplCompat.mergeWithNextTransaction:4 com.honeyspace.transition.utils.SurfaceTransactionApplier.scheduleApply$lambda$1:16 com.honeyspace.transition.utils.SurfaceTransactionApplier.b:0 
+07-04 08:44:28.893  1505  3142 D ActivityManager: unpendingScheduleServiceRestart: u=10352, drop=false
+07-04 08:44:28.894  1000  1000 D SurfaceFlinger: setDesiredMode 4627039422300187648 {mode={fps=90.00 Hz, modePtr={id=0, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=false, force=false}

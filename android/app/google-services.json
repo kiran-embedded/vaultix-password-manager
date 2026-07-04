@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "737717680000",
+    "project_id": "vaultix-501402",
+    "storage_bucket": "vaultix-501402.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737717680000:android:vaultix",
+        "android_client_info": {
+          "package_name": "com.kiranembedded.vaultix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737717680000-k2n7b5p44cqmfapp1kljnuebiluj60ti.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kiranembedded.vaultix",
+            "certificate_hash": "85c01251a741f84da31a1850eb7549e9dba77523"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyPlaceholderKeyReplaceInConsole"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
