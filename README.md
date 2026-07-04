@@ -1,87 +1,91 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=7C4DFF&height=200&section=header&text=Vaultix&fontSize=70&fontColor=ffffff&animation=twinkling&desc=Offline-First%20Password%20Manager&descSize=20&descAlignY=70" alt="Vaultix Animated Header" />
+Vaultix 🔐
 
-  <br><br>
+A privacy-focused, offline-first password manager built with Flutter.
 
-  <p>
-    <strong>A private, offline-first secure vault built from the ground up to protect your digital life.</strong>
-  </p>
+Vaultix is designed around a simple principle: your passwords should belong to you—not to a company, a cloud service, or a third-party server.
 
-  <p>
-    <a href="#the-concept">The Concept</a> •
-    <a href="#core-features">Features</a> •
-    <a href="#how-encryption-works">How Encryption Works</a> •
-    <a href="#legal-notice">Legal Notice</a>
-  </p>
-
-  <p>
-    <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter Badge" />
-    <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart Badge" />
-    <img src="https://img.shields.io/badge/Encryption-AES--256--GCM-red?style=for-the-badge" alt="Security Badge" />
-  </p>
-</div>
+Instead of relying on online accounts or centralized infrastructure, Vaultix keeps your encrypted vault on your device. If you choose to create a backup, the encrypted vault is stored in your own Google Drive, and only the encrypted data is uploaded. Your passwords are never stored in plaintext outside your device.
 
 ---
 
-## 💡 The Concept
+💡 Why I Built Vaultix
 
-I built Vaultix because I didn't trust cloud-based password managers with my raw data. The idea here is simple: **zero trust**. 
+Most password managers rely on cloud synchronization and user accounts. While many are secure, I wanted to build an alternative that gives users complete control over where their data lives.
 
-Vaultix never sends your plaintext data anywhere. There are no accounts, no subscriptions, and no central servers holding your passwords. Everything you type into Vaultix gets encrypted locally on your phone using military-grade encryption *before* it ever leaves the device. If you decide to back it up, you back it up to *your own* Google Drive—and even then, Google only sees encrypted gibberish.
+Vaultix is my attempt at creating a password manager that works entirely offline while still offering optional encrypted backups for convenience.
 
----
+The goal is simple:
 
-## ⚡ Core Features
-
-- **Total Offline Mode:** Works entirely without an internet connection. The app only connects if you explicitly choose to sync to your personal Google Drive.
-- **Biometric Unlock:** Hooked directly into native Fingerprint and Face ID APIs for quick access.
-- **Screenshot Blocker:** Forces Android's `FLAG_SECURE` to block anyone (or any background app) from taking screenshots or recording your screen while the vault is open.
-- **Custom Password Generator:** Built-in generator to spin up heavy-duty, randomized passwords. You pick the length and character sets.
-- **Smart Organization:** Keep your Logins, Credit Cards, and Secure Notes separated and easily accessible.
-- **Auto-Sync:** If enabled, the app watches for changes and automatically pushes the newly encrypted database to your Google Drive in the background.
+- Privacy by default
+- Offline-first architecture
+- User-controlled backups
+- Strong client-side encryption
+- No mandatory online account
 
 ---
 
-## 🔐 How Encryption Works
+✨ Features
 
-I didn't cut corners on security. Here's exactly what happens under the hood:
-
-1. **Key Derivation:** When you set your Master Password, Vaultix runs it through PBKDF2 with a secure random salt to stretch it into a strong 256-bit encryption key.
-2. **Hardware Storage:** The derived keys are locked inside the device's hardware-backed Keystore (Android) or Secure Enclave (iOS). 
-3. **AES-256-GCM:** Every single piece of data you save is encrypted using AES-256 in Galois/Counter Mode. This handles both keeping the data hidden and ensuring nobody tampers with it.
-4. **Cloud Blindness:** The payload sent to Google Drive is the ciphertext. Nobody without your Master Password can read your vault.
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=36D7FF&height=100&text=Your%20Keys.%20Your%20Data.&fontSize=30&fontColor=000000&animation=fadeIn" alt="Security Banner" />
-</div>
-
----
-
-## 📸 App Interface
-
-| Master Login | Vault Dashboard | Password Generator |
-| :---: | :---: | :---: |
-| <img src="assets/screenshots/login.png" width="250"> | <img src="assets/screenshots/home.png" width="250"> | <img src="assets/screenshots/generator.png" width="250"> |
-| **Settings & Sync** | **Appearance & Support** | |
-| <img src="assets/screenshots/settings_1.png" width="250"> | <img src="assets/screenshots/settings_2.png" width="250"> | |
+- 🔒 Offline-first — Fully functional without an internet connection.
+- ☁️ Optional Google Drive Backup — Upload an encrypted backup to your own Drive account.
+- 👆 Biometric Authentication — Unlock using Fingerprint or Face ID where supported.
+- 🛡️ Screenshot Protection — Uses Android's "FLAG_SECURE" to help prevent screenshots and screen recording while the vault is open.
+- 🔑 Password Generator — Generate strong passwords with configurable length and character sets.
+- 📂 Vault Organization — Store logins, secure notes, payment cards, and identities.
+- ⭐ Favorites & Recent Items
+- 📊 Security Score based on password strength.
+- ⚠️ Weak and Reused Password Detection
+- 🎨 Modern Material 3 Interface
+- 🌙 Dark & Light Themes
+- 📳 Native Haptic Feedback
+- 🔄 Automatic Encrypted Backup (optional)
 
 ---
 
-## 📖 Open Source & License
+🔐 Security Design
 
-### **GNU General Public License v3.0 (GPLv3)**
+Vaultix is designed so that encryption happens before any data leaves the device.
 
-I decided to open-source Vaultix because transparency is everything in cybersecurity. Anyone can read, audit, and use this code. 
+The security workflow is straightforward:
 
-However, since I put a lot of work into this as a solo developer, this project is licensed under **GPLv3**. This is an open-source license with a strict protective catch:
-- You are totally free to fork this, build it, and use it for yourself.
-- **BUT**, if you modify this code and distribute your own version (like putting it on the Play Store), you are **legally required to open-source your entire project under the exact same GPLv3 license**. 
-- You cannot take my code, make it closed-source, and sell it. You have to share your work just like I shared mine.
+1. Your Master Password is processed using PBKDF2 with a randomly generated salt to derive a strong encryption key.
+2. Sensitive cryptographic material is protected using the platform security features available on Android and iOS where applicable.
+3. Vault data is encrypted using AES-256-GCM, which provides both confidentiality and integrity.
+4. If cloud backup is enabled, only the encrypted vault is uploaded to your personal Google Drive account.
 
-This protects the project from being stolen by greedy corporations while keeping it 100% free for the community. Check the `LICENSE` file for the exact legal terms.
+At no point does Vaultix intentionally upload your passwords in plaintext.
 
 ---
 
-<div align="center">
-  <p>Designed and coded by <a href="https://github.com/kiran-embedded">Kiran</a>.</p>
-</div>
+📱 Screenshots
+
+Login| Dashboard| Password Generator
+login.png| home.png| generator.png
+
+Settings| Appearance
+settings_1.png| settings_2.png
+
+---
+
+📜 License
+
+Vaultix is released under the GNU General Public License v3.0 (GPLv3).
+
+I chose GPLv3 because I believe security software benefits from transparency. Anyone can inspect, learn from, and contribute to the project.
+
+You're welcome to:
+
+- Use the project
+- Study the source code
+- Modify it
+- Share it
+
+If you distribute a modified version, GPLv3 requires that the source code for those modifications also be released under the same license.
+
+See the "LICENSE" file for the complete license text.
+
+---
+
+Built with ❤️ using Flutter
+
+Designed and developed by Kiran.
