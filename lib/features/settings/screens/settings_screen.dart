@@ -8,6 +8,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:intl/intl.dart';
 import '../../../core/constants/app_colors.dart';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 import '../../../core/constants/app_text_styles.dart';
 import '../../../core/utils/haptic_helper.dart';
 import '../../../core/services/google_auth_service.dart';
@@ -143,12 +145,22 @@ class SettingsScreen extends ConsumerWidget {
                     children: [
                       _NavRow(
                         icon: Icons.help_outline_rounded,
-                        iconColor: const Color(0xFF2196F3),
+                        iconColor: AppColors.accentOrange,
                         label: 'Help Centre',
-                        subtitle: 'FAQ, contact & privacy policy',
+                        subtitle: 'FAQs and support',
+                        onTap: () => context.push('/help'),
                         textColor: headerTextColor,
                         subColor: subtitleColor,
-                        onTap: () => context.push('/help'),
+                      ),
+                      _Divider(dividerColor),
+                      _NavRow(
+                        icon: Icons.new_releases_rounded,
+                        iconColor: AppColors.primary,
+                        label: 'What\'s New',
+                        subtitle: 'Version 1.0.0+2 changelog',
+                        onTap: () => context.push('/changelog'),
+                        textColor: headerTextColor,
+                        subColor: subtitleColor,
                       ),
                       _Divider(dividerColor),
                       _NavRow(
@@ -167,13 +179,20 @@ class SettingsScreen extends ConsumerWidget {
                       ),
                       _Divider(dividerColor),
                       _NavRow(
-                        icon: Icons.info_outline_rounded,
-                        iconColor: Colors.grey,
-                        label: 'Version',
-                        subtitle: '1.0.0+1 — Vaultix',
+                        icon: Icons.system_update_rounded,
+                        iconColor: AppColors.accentGreen,
+                        label: 'Check for Updates',
+                        subtitle: 'Current: v1.0.0+2',
                         textColor: headerTextColor,
                         subColor: subtitleColor,
-                        onTap: () {},
+                        onTap: () {
+                          HapticHelper.light();
+                          showDialog(
+                            context: context,
+                            barrierDismissible: false,
+                            builder: (context) => const _UpdateCheckDialog(),
+                          );
+                        },
                         showChevron: false,
                       ),
                     ],
@@ -1057,6 +1076,219 @@ class _TwoFactorRow extends ConsumerWidget {
             materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _UpdateCheckDialog extends StatefulWidget {
+  const _UpdateCheckDialog();
+  @override
+  State<_UpdateCheckDialog> createState() => _UpdateCheckDialogState();
+}
+
+enum _UpdateState { checking, available, upToDate, error }
+
+class _UpdateCheckDialogState extends State<_UpdateCheckDialog> {
+  _UpdateState _state = _UpdateState.checking;
+  String _latestVersion = '';
+  String _downloadUrl = '';
+
+  @override
+  void initState() {
+    super.initState();
+    _checkForUpdates();
+  }
+
+  Future<void> _checkForUpdates() async {
+    // Artificial delay to let the animation play out beautifully
+    await Future.delayed(const Duration(milliseconds: 1500));
+    try {
+      final response = await http.get(Uri.parse('https://api.github.com/repos/kiran-embedded/vaultix-password-manager/releases/latest'));
+      if (response.statusCode == 200 && mounted) {
+        final data = jsonDecode(response.body);
+        final latestVersion = data['tag_name'] as String;
+        if (latestVersion != 'v1.0.0+2' && latestVersion != 'v1.0.0') {
+          setState(() {
+            _latestVersion = latestVersion;
+            _downloadUrl = data['html_url'] as String;
+            _state = _UpdateState.available;
+          });
+          HapticHelper.success();
+        } else {
+          setState(() => _state = _UpdateState.upToDate);
+        }
+      } else {
+        throw Exception();
+      }
+    } catch (_) {
+      if (mounted) setState(() => _state = _UpdateState.error);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+    final cardBg = isDark ? AppColors.surfaceCardDark : AppColors.surfaceCardLight;
+    final textColor = isDark ? AppColors.textPrimaryDark : AppColors.textPrimaryLight;
+    final subColor = isDark ? AppColors.textSecondaryDark : AppColors.textSecondaryLight;
+    
+    Widget content;
+    switch (_state) {
+      case _UpdateState.checking:
+        content = Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Stack(
+              alignment: Alignment.center,
+              children: [
+                SizedBox(
+                  width: 70,
+                  height: 70,
+                  child: CircularProgressIndicator(
+                    strokeWidth: 3,
+                    color: AppColors.primary.withAlpha(50),
+                    valueColor: const AlwaysStoppedAnimation<Color>(AppColors.primary),
+                  ),
+                ),
+                const Icon(Icons.cloud_sync_rounded, color: AppColors.primary, size: 32)
+                    .animate(onPlay: (c) => c.repeat(reverse: true))
+                    .scaleXY(begin: 0.9, end: 1.1, duration: 800.ms, curve: Curves.easeInOut),
+              ],
+            ),
+            const SizedBox(height: 24),
+            Text('Checking for updates...', style: AppTextStyles.labelLarge.copyWith(color: textColor, fontWeight: FontWeight.bold)),
+          ],
+        ).animate().fadeIn(duration: 300.ms).scaleXY(begin: 0.95);
+        break;
+      case _UpdateState.available:
+        content = Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: AppColors.accentGreen.withAlpha(20),
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(Icons.system_update_alt_rounded, color: AppColors.accentGreen, size: 36),
+            ).animate().scaleXY(begin: 0, curve: Curves.easeOutBack, duration: 500.ms),
+            const SizedBox(height: 20),
+            Text('Update Available!', style: AppTextStyles.headingSmall.copyWith(color: textColor, fontWeight: FontWeight.bold)),
+            const SizedBox(height: 8),
+            Text('Version \$_latestVersion is ready to install.', style: AppTextStyles.bodyMedium.copyWith(color: subColor), textAlign: TextAlign.center),
+            const SizedBox(height: 28),
+            Row(
+              children: [
+                Expanded(
+                  child: TextButton(
+                    onPressed: () => Navigator.pop(context),
+                    child: Text('Later', style: TextStyle(color: subColor)),
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  flex: 2,
+                  child: ElevatedButton(
+                    onPressed: () async {
+                      Navigator.pop(context);
+                      final url = Uri.parse(_downloadUrl);
+                      if (await canLaunchUrl(url)) {
+                        await launchUrl(url, mode: LaunchMode.externalApplication);
+                      }
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.accentGreen,
+                      foregroundColor: Colors.white,
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      padding: const EdgeInsets.symmetric(vertical: 14),
+                    ),
+                    child: const Text('Download', style: TextStyle(fontWeight: FontWeight.bold)),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ).animate().fadeIn(duration: 400.ms).slideY(begin: 0.1);
+        break;
+      case _UpdateState.upToDate:
+        content = Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: AppColors.primary.withAlpha(20),
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(Icons.check_circle_rounded, color: AppColors.primary, size: 36),
+            ).animate().scaleXY(begin: 0, curve: Curves.easeOutBack, duration: 500.ms),
+            const SizedBox(height: 20),
+            Text('You\'re Up to Date!', style: AppTextStyles.headingSmall.copyWith(color: textColor, fontWeight: FontWeight.bold)),
+            const SizedBox(height: 8),
+            Text('Vaultix v1.0.0+2 is the latest version.', style: AppTextStyles.bodyMedium.copyWith(color: subColor), textAlign: TextAlign.center),
+            const SizedBox(height: 28),
+            SizedBox(
+              width: double.infinity,
+              child: TextButton(
+                onPressed: () => Navigator.pop(context),
+                style: TextButton.styleFrom(
+                  backgroundColor: AppColors.primary.withAlpha(20),
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                ),
+                child: const Text('Awesome', style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.bold)),
+              ),
+            ),
+          ],
+        ).animate().fadeIn(duration: 400.ms).slideY(begin: 0.1);
+        break;
+      case _UpdateState.error:
+        content = Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: AppColors.accentRed.withAlpha(20),
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(Icons.error_outline_rounded, color: AppColors.accentRed, size: 36),
+            ).animate().shake(hz: 4, curve: Curves.easeInOut, duration: 400.ms),
+            const SizedBox(height: 20),
+            Text('Check Failed', style: AppTextStyles.headingSmall.copyWith(color: textColor, fontWeight: FontWeight.bold)),
+            const SizedBox(height: 8),
+            Text('Could not connect to GitHub. Please check your internet connection and try again.', style: AppTextStyles.bodyMedium.copyWith(color: subColor), textAlign: TextAlign.center),
+            const SizedBox(height: 28),
+            SizedBox(
+              width: double.infinity,
+              child: TextButton(
+                onPressed: () => Navigator.pop(context),
+                style: TextButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                ),
+                child: Text('Close', style: TextStyle(color: subColor, fontWeight: FontWeight.bold)),
+              ),
+            ),
+          ],
+        ).animate().fadeIn();
+        break;
+    }
+
+    return Dialog(
+      backgroundColor: cardBg,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+      elevation: 10,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+        child: AnimatedSize(
+          duration: const Duration(milliseconds: 300),
+          curve: Curves.easeInOutBack,
+          child: content,
+        ),
       ),
     );
   }

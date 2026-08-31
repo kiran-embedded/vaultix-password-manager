@@ -10,6 +10,7 @@ import '../features/auth/providers/auth_provider.dart';
 import '../features/security/screens/security_screen.dart';
 import '../features/vault/screens/add_item_screen.dart';
 import '../features/settings/screens/help_centre_screen.dart';
+import '../features/settings/screens/changelog_screen.dart';
 import '../shared/screens/main_screen.dart';
 
 /// Fade page transition factory.
@@ -109,6 +110,12 @@ final appRouterProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/help',
         pageBuilder: (ctx, state) => _slideUpPage(ctx, state, const HelpCentreScreen()),
+      ),
+
+      // Changelog
+      GoRoute(
+        path: '/changelog',
+        pageBuilder: (ctx, state) => _slideUpPage(ctx, state, const ChangelogScreen()),
       ),
     ],
   );

@@ -75,7 +75,17 @@ class _VaultixAppState extends ConsumerState<VaultixApp> with WidgetsBindingObse
         theme: AppTheme.light,
         darkTheme: AppTheme.dark,
         themeMode: settings.darkMode ? ThemeMode.dark : ThemeMode.light,
+        themeAnimationDuration: Duration.zero,
         routerConfig: router,
+        builder: (context, child) {
+          // Lock text scaling to default (1.0) to prevent OS font settings from breaking UI
+          return MediaQuery(
+            data: MediaQuery.of(context).copyWith(
+              textScaler: const TextScaler.linear(1.0),
+            ),
+            child: child!,
+          );
+        },
       ),
     );
   }

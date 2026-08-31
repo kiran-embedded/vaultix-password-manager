@@ -63,16 +63,23 @@ class SettingsState {
 }
 
 class SettingsNotifier extends StateNotifier<SettingsState> {
-  SettingsNotifier()
-      : super(const SettingsState(
-          darkMode: false,
-          biometricUnlock: true,
-          userName: 'Vaultix User',
-          userEmail: '',
-          userPhotoUrl: '',
+  SettingsNotifier(this.prefs)
+      : super(SettingsState(
+          darkMode: prefs.getBool(_keyDarkMode) ?? false,
+          biometricUnlock: prefs.getBool(_keyBiometric) ?? true,
+          userName: prefs.getString(_keyUserName) ?? 'Vaultix User',
+          userEmail: prefs.getString(_keyUserEmail) ?? '',
+          userPhotoUrl: prefs.getString(_keyUserPhoto) ?? '',
+          notificationsViewedAt: prefs.getString(_keyNotificationsViewed) != null 
+              ? DateTime.tryParse(prefs.getString(_keyNotificationsViewed)!) 
+              : null,
         )) {
-    _loadSettings();
+    // Ensure HapticHelper uses fallback/compatible mode (since we removed the UI selector)
+    HapticHelper.hapticMode = 1;
+    refreshBackupMetadata();
   }
+
+  final SharedPreferences prefs;
 
   static const _keyDarkMode = 'setting_dark_mode';
   static const _keyBiometric = 'setting_biometric';
@@ -82,28 +89,7 @@ class SettingsNotifier extends StateNotifier<SettingsState> {
   static const _keyUserPhoto = 'gdrive_connected_photo';
   static const _keyNotificationsViewed = 'notifications_viewed_at';
 
-  Future<void> _loadSettings() async {
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      
-      // Ensure HapticHelper uses fallback/compatible mode (since we removed the UI selector)
-      HapticHelper.hapticMode = 1;
-
-      state = SettingsState(
-        darkMode: prefs.getBool(_keyDarkMode) ?? false,
-        biometricUnlock: prefs.getBool(_keyBiometric) ?? true,
-        userName: prefs.getString(_keyUserName) ?? 'Vaultix User',
-        userEmail: prefs.getString(_keyUserEmail) ?? '',
-        userPhotoUrl: prefs.getString(_keyUserPhoto) ?? '',
-        notificationsViewedAt: prefs.getString(_keyNotificationsViewed) != null 
-            ? DateTime.tryParse(prefs.getString(_keyNotificationsViewed)!) 
-            : null,
-      );
-      await refreshBackupMetadata();
-    } catch (_) {
-      // Keep defaults on failure
-    }
-  }
+  // _loadSettings removed as we initialize synchronously
 
   Future<void> updateGoogleProfile(String? name, String? email, String? photoUrl) async {
     state = state.copyWith(
@@ -123,16 +109,14 @@ class SettingsNotifier extends StateNotifier<SettingsState> {
     }
   }
 
-  Future<void> setDarkMode(bool value) async {
+  void setDarkMode(bool value) {
     state = state.copyWith(darkMode: value);
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool(_keyDarkMode, value);
+    prefs.setBool(_keyDarkMode, value);
   }
 
-  Future<void> setBiometricUnlock(bool value) async {
+  void setBiometricUnlock(bool value) {
     state = state.copyWith(biometricUnlock: value);
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool(_keyBiometric, value);
+    prefs.setBool(_keyBiometric, value);
   }
 
   Future<void> refreshBackupMetadata() async {
@@ -164,11 +148,10 @@ class SettingsNotifier extends StateNotifier<SettingsState> {
     return result;
   }
 
-  Future<void> markNotificationsViewed() async {
+  void markNotificationsViewed() {
     final now = DateTime.now();
     state = state.copyWith(notificationsViewedAt: now);
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_keyNotificationsViewed, now.toIso8601String());
+    prefs.setString(_keyNotificationsViewed, now.toIso8601String());
   }
 
   Future<void> resetAllSettings() async {
@@ -187,7 +170,12 @@ class SettingsNotifier extends StateNotifier<SettingsState> {
   }
 }
 
+final sharedPreferencesProvider = Provider<SharedPreferences>((ref) {
+  throw UnimplementedError('sharedPreferencesProvider must be overridden');
+});
+
 final settingsProvider =
     StateNotifierProvider<SettingsNotifier, SettingsState>((ref) {
-  return SettingsNotifier();
+  final prefs = ref.watch(sharedPreferencesProvider);
+  return SettingsNotifier(prefs);
 });

@@ -254,13 +254,13 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                           ),
                         ],
                       ),
-                    ).animate().fadeIn(duration: 800.ms).slideY(begin: -0.2),
+                    ).animate().fadeIn(duration: 400.ms).slideY(begin: -0.2),
                     const SizedBox(height: 8),
                     Text(
                       AppConstants.appTagline,
                       style:
                           AppTextStyles.bodyMedium.copyWith(color: subtitleColor),
-                    ).animate().fadeIn(duration: 600.ms, delay: 100.ms),
+                    ).animate().fadeIn(duration: 300.ms, delay: 50.ms),
                     const SizedBox(height: 48),
 
                     if (_useRecoveryMode) ...[
@@ -306,7 +306,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                         children: [
                           ShieldHero(size: 180, isAnimated: !_scanning)
                               .animate()
-                              .fadeIn(duration: 800.ms)
+                              .fadeIn(duration: 400.ms)
                               .scale(
                                 begin: const Offset(0.8, 0.8),
                                 curve: Curves.easeOutBack,
@@ -355,7 +355,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                                 ),
                               ),
                             ),
-                          ).animate().fadeIn(duration: 600.ms, delay: 200.ms),
+                          ).animate().fadeIn(duration: 300.ms, delay: 100.ms),
                           const SizedBox(height: 24),
                           Text(
                             _scanning ? 'Authenticating…' : 'Tap to Unlock',
@@ -376,6 +376,21 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                               style: AppTextStyles.bodyMedium.copyWith(
                                 color: AppColors.primary,
                                 fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          TextButton(
+                            onPressed: () {
+                              HapticHelper.light();
+                              setState(() {
+                                _useRecoveryMode = true;
+                              });
+                            },
+                            child: Text(
+                              'Emergency Recovery',
+                              style: AppTextStyles.bodySmall.copyWith(
+                                color: textMuted,
                               ),
                             ),
                           ),

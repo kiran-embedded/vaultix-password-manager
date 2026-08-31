@@ -1,7 +1,7 @@
 name: vaultix_app
 description: Vaultix — Premium Password Manager. Secure. Simple. Powerful.
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.0+2
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -46,8 +46,10 @@ dependencies:
   qr_flutter: ^4.1.0
   url_launcher: ^6.3.0
   permission_handler: ^11.3.1
+  freerasp: ^6.3.1
 
   cupertino_icons: ^1.0.8
+  http: ^1.6.0
 
 dev_dependencies:
   flutter_test:

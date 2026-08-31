@@ -285,17 +285,26 @@ class _HelpCentreScreenState extends State<HelpCentreScreen> {
                 ),
                 const SizedBox(height: 8),
                 Container(
-                  padding: const EdgeInsets.all(12),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
                   decoration: BoxDecoration(
-                    color: AppColors.primary.withAlpha(8),
+                    color: AppColors.primary.withAlpha(12),
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: AppColors.primary.withAlpha(25)),
+                    border: Border.all(color: AppColors.primary.withAlpha(30)),
                   ),
-                  child: Text(
-                    'Last updated: July 2026 · For questions contact kiran.cybergrid@gmail.com',
-                    style: AppTextStyles.bodySmall.copyWith(
-                        color: mutedColor, fontSize: 11),
-                    textAlign: TextAlign.center,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.update_rounded, color: AppColors.primary.withAlpha(150), size: 16),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          'Last updated: August 2026 · For questions contact kiran.cybergrid@gmail.com',
+                          style: AppTextStyles.labelSmall.copyWith(
+                              color: mutedColor, fontSize: 11, fontWeight: FontWeight.w500),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
