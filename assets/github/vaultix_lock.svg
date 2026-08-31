@@ -1,17 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
   <defs>
-    <!-- Lavender Glow Filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-    
     <linearGradient id="lavenderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#E6E6FA" />
       <stop offset="100%" stop-color="#9b5de5" />
     </linearGradient>
 
-    <!-- Shackle Gradient -->
     <linearGradient id="shackleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#C0C0C0" />
       <stop offset="50%" stop-color="#FFFFFF" />
@@ -19,11 +12,12 @@
     </linearGradient>
   </defs>
 
+  <!-- Background -->
   <rect width="200" height="200" fill="transparent" />
 
   <!-- Animated Shackle -->
   <g>
-    <!-- We animate the shackle translating up and down -->
+    <!-- Simple translate up and down -->
     <animateTransform attributeName="transform" type="translate" values="0,0; 0,-15; 0,0" dur="3s" repeatCount="indefinite" />
     
     <path d="M 70 90 L 70 70 C 70 50, 130 50, 130 70 L 130 90" 
@@ -36,23 +30,22 @@
   <!-- Lock Body -->
   <rect x="50" y="85" width="100" height="75" rx="15" ry="15" 
         fill="url(#lavenderGrad)" 
-        filter="url(#glow)" 
         stroke="#4B0082" stroke-width="2"/>
   
   <!-- Lock Keyhole pulsing -->
   <g>
-    <animate attributeName="opacity" values="1; 0.6; 1" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="1; 0.5; 1" dur="2s" repeatCount="indefinite" />
     <circle cx="100" cy="115" r="10" fill="#4B0082" />
     <path d="M 95 120 L 105 120 L 108 145 L 92 145 Z" fill="#4B0082" />
   </g>
 
-  <!-- Shield or Sparkles -->
+  <!-- Floating Sparkles -->
   <g>
     <animateTransform attributeName="transform" type="rotate" values="0 150 50; 360 150 50" dur="10s" repeatCount="indefinite" />
-    <polygon points="150,40 153,47 160,50 153,53 150,60 147,53 140,50 147,47" fill="#E6E6FA" filter="url(#glow)"/>
+    <polygon points="150,40 153,47 160,50 153,53 150,60 147,53 140,50 147,47" fill="#E6E6FA"/>
   </g>
   <g>
     <animateTransform attributeName="transform" type="rotate" values="0 40 140; -360 40 140" dur="8s" repeatCount="indefinite" />
-    <polygon points="40,132 42,138 48,140 42,142 40,148 38,142 32,140 38,138" fill="#B57EDC" filter="url(#glow)"/>
+    <polygon points="40,132 42,138 48,140 42,142 40,148 38,142 32,140 38,138" fill="#B57EDC"/>
   </g>
 </svg>
