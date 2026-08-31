@@ -1,11 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="100%" height="100%">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2D1B4E" /> <!-- Deep dark purple -->
-      <stop offset="50%" stop-color="#4B0082" /> <!-- Indigo/Purple -->
-      <stop offset="100%" stop-color="#B57EDC" /> <!-- Lavender -->
+      <stop offset="0%" stop-color="#1E103C" />
+      <stop offset="50%" stop-color="#4B0082" />
+      <stop offset="100%" stop-color="#9b5de5" />
     </linearGradient>
+
+    <!-- Ambient Glowing Orbs using RadialGradients (No Filters for GitHub Camo) -->
+    <radialGradient id="glowLeft" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B57EDC" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#B57EDC" stop-opacity="0"/>
+    </radialGradient>
+    
+    <radialGradient id="glowRight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7B2CBF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7B2CBF" stop-opacity="0"/>
+    </radialGradient>
 
     <!-- Shackle Gradient -->
     <linearGradient id="shackleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -16,54 +27,76 @@
   </defs>
 
   <!-- Banner Background -->
-  <rect width="800" height="200" rx="16" ry="16" fill="url(#bgGrad)" />
+  <rect width="800" height="250" rx="20" ry="20" fill="url(#bgGrad)" />
 
-  <!-- Floating Background Particles -->
-  <g fill="#E6E6FA" opacity="0.2">
-    <circle cx="100" cy="50" r="4">
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-20; 0,0" dur="4s" repeatCount="indefinite" />
+  <!-- Ambient Glowing Orbs -->
+  <g>
+    <!-- Big glowing orb left -->
+    <circle cx="150" cy="50" r="150" fill="url(#glowLeft)">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 30,30; 0,0" dur="8s" repeatCount="indefinite" />
     </circle>
-    <circle cx="700" cy="150" r="6">
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-30; 0,0" dur="6s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="300" cy="170" r="3">
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-15; 0,0" dur="3.5s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="500" cy="40" r="5">
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-25; 0,0" dur="5s" repeatCount="indefinite" />
+    <!-- Big glowing orb right -->
+    <circle cx="650" cy="200" r="200" fill="url(#glowRight)">
+      <animateTransform attributeName="transform" type="translate" values="0,0; -40,-30; 0,0" dur="10s" repeatCount="indefinite" />
     </circle>
   </g>
 
-  <!-- Floating Lock Icon -->
+  <!-- Background Grid to add a tech feel -->
+  <g stroke="#FFFFFF" stroke-width="1" opacity="0.05">
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    
+    <line x1="100" y1="0" x2="100" y2="250" />
+    <line x1="200" y1="0" x2="200" y2="250" />
+    <line x1="300" y1="0" x2="300" y2="250" />
+    <line x1="400" y1="0" x2="400" y2="250" />
+    <line x1="500" y1="0" x2="500" y2="250" />
+    <line x1="600" y1="0" x2="600" y2="250" />
+    <line x1="700" y1="0" x2="700" y2="250" />
+  </g>
+
+  <!-- Floating Particles -->
+  <g fill="#FFFFFF" opacity="0.6">
+    <circle cx="100" cy="150" r="3"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-30; 0,0" dur="5s" repeatCount="indefinite" /></circle>
+    <circle cx="720" cy="60" r="4"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-20; 0,0" dur="6s" repeatCount="indefinite" /></circle>
+    <circle cx="600" cy="200" r="2.5"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-40; 0,0" dur="4s" repeatCount="indefinite" /></circle>
+    <circle cx="200" cy="50" r="4.5"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-15; 0,0" dur="7s" repeatCount="indefinite" /></circle>
+    <circle cx="350" cy="220" r="3.5"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-25; 0,0" dur="5.5s" repeatCount="indefinite" /></circle>
+    <circle cx="50" cy="200" r="2"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-25; 0,0" dur="6.5s" repeatCount="indefinite" /></circle>
+    <circle cx="750" cy="180" r="3.5"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-15; 0,0" dur="4.5s" repeatCount="indefinite" /></circle>
+  </g>
+
+  <!-- Center Floating Group (Lock and Text) -->
   <g>
-    <!-- Master floating animation for the entire lock -->
+    <!-- Master hover animation -->
     <animateTransform attributeName="transform" type="translate" values="0,0; 0,-12; 0,0" dur="4s" repeatCount="indefinite" />
     
-    <g transform="translate(120, 50)">
+    <!-- Lock Icon (Centered) -->
+    <g transform="translate(360, 45)">
       <!-- Lock Shackle -->
-      <path d="M 30 40 L 30 25 C 30 5, 70 5, 70 25 L 70 40" 
+      <path d="M 25 35 L 25 15 C 25 -10, 55 -10, 55 15 L 55 35" 
             fill="none" 
             stroke="url(#shackleGrad)" 
             stroke-width="12" 
             stroke-linecap="round" />
             
       <!-- Lock Body -->
-      <rect x="15" y="35" width="70" height="55" rx="10" ry="10" 
+      <rect x="5" y="30" width="70" height="50" rx="12" ry="12" 
             fill="#E6E6FA" 
             stroke="#FFFFFF" stroke-width="2"/>
       
       <!-- Keyhole -->
-      <circle cx="50" cy="55" r="7" fill="#4B0082" />
-      <path d="M 46 60 L 54 60 L 56 75 L 44 75 Z" fill="#4B0082" />
+      <circle cx="40" cy="50" r="7" fill="#4B0082" />
+      <path d="M 36 55 L 44 55 L 46 70 L 34 70 Z" fill="#4B0082" />
     </g>
-  </g>
 
-  <!-- Text -->
-  <g transform="translate(250, 115)">
-    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="64" font-weight="900" fill="#FFFFFF" letter-spacing="4">
+    <!-- Text (Centered) -->
+    <text x="400" y="165" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="56" font-weight="900" fill="#FFFFFF" letter-spacing="8">
       VAULTIX
     </text>
-    <text x="5" y="35" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="500" fill="#E6E6FA" letter-spacing="2">
+    <text x="400" y="200" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#E6E6FA" letter-spacing="4" opacity="0.9">
       PASSWORD MANAGER
     </text>
   </g>
